@@ -1,0 +1,115 @@
+{
+  "brand": {
+    "name": "EZClean Pros",
+    "url": "https://ezcleaning.services/",
+    "phoneDisplay": "(858) 370-5205",
+    "phoneHref": "+18583705205",
+    "email": "hello@ezcleaning.services",
+    "ogImage": "https://ezcleaning.services/assets/og-image.jpg",
+    "tagline": "Based in San Diego, working the coast and inland communities daily. No franchise call center in another state.",
+    "areas": ["San Diego", "La Jolla", "Pacific Beach", "Chula Vista", "Coronado", "National City", "Point Loma", "Mission Valley", "Clairemont", "Carlsbad", "Encinitas"]
+  },
+  "services": [
+    {
+      "slug": "residential-cleaning",
+      "cardTitle": "Residential Cleaning",
+      "h1": "Residential Cleaning in San Diego",
+      "metaTitle": "Residential Cleaning San Diego | EZClean Pros",
+      "metaDescription": "Recurring house cleaning across San Diego — weekly, biweekly, monthly, or one-time. Kitchen, bathrooms, bedrooms, and living areas, every visit. Call (858) 370-5205.",
+      "tags": ["Weekly", "Biweekly", "Monthly", "One-time"],
+      "shortDesc": "Recurring housekeeping for houses, condos, townhomes, and vacation rentals: kitchen, bathrooms, bedrooms, and living areas, every visit, top to bottom.",
+      "body": [
+        "Keeping a home clean on a recurring basis is one of those things that's easy to fall behind on — work, kids, and life in general tend to win out over scrubbing baseboards. EZClean Pros handles the recurring housekeeping so it's just off your plate: kitchen, bathrooms, bedrooms, and living areas, covered top to bottom every single visit.",
+        "We work on whatever cadence fits your household — weekly, biweekly, monthly, or a one-time deep pass before guests arrive. Every visit follows the same standard: counters cleared and wiped, floors vacuumed and mopped, bathrooms disinfected, dusting from ceiling fans down to baseboards, and beds made if requested. Nothing rushed, nothing skipped because it's \"not on the list this week.\"",
+        "This is a local team, not a franchise call center routing your request to whoever's available three counties over. The same standards and the same accountability apply whether you're in a downtown condo or a house up in Carlsbad.",
+        "If it's been a while since the last deep reset — behind appliances, baseboards, window tracks — a one-time <a href=\"/services/deep-cleaning-move-in-out/\">deep cleaning</a> pairs well with a recurring plan and gets everything caught up before regular visits take over.",
+        "Residential cleaning is available across San Diego and the surrounding coast and inland communities — including La Jolla, Pacific Beach, Chula Vista, Coronado, National City, Point Loma, Mission Valley, Clairemont, Carlsbad, and Encinitas."
+      ],
+      "serviceType": "House Cleaning"
+    },
+    {
+      "slug": "deep-cleaning-move-in-out",
+      "cardTitle": "Deep Clean / Move-out Detailing",
+      "h1": "Deep Cleaning & Move-In / Move-Out Cleaning in San Diego",
+      "metaTitle": "Deep Cleaning & Move-In/Out San Diego | EZClean Pros",
+      "metaDescription": "The heavier pass: baseboards, inside appliances, fixtures, every corner a standard clean skips. Built for move-in, move-out, and seasonal resets. Call (858) 370-5205.",
+      "tags": ["Move-in", "Move-out", "Seasonal"],
+      "shortDesc": "The heavier pass: baseboards, inside appliances, fixtures, and every corner a standard visit doesn't reach. Built for move-in, move-out, and seasonal resets.",
+      "body": [
+        "A standard cleaning visit is built for upkeep. A deep clean is built for the corners that upkeep never touches — baseboards, inside the oven and fridge, light fixtures, window tracks, behind and under furniture. It's the pass you want before new tenants move in, before you hand back the keys on a move-out, or once or twice a year to reset a home that's been coasting on quick cleans.",
+        "For move-out cleans specifically, we work to the standard most property managers and landlords expect for a security deposit walkthrough: appliances cleaned inside and out, cabinets wiped down empty, bathrooms fully disinfected, and floors detailed edge to edge. For move-in, the same standard applies before your furniture shows up, so you're not unpacking boxes into someone else's dust.",
+        "Seasonal resets work well for households that keep up with regular cleaning but want a periodic deeper pass — think spring cleaning, without you having to actually do it.",
+        "For an ongoing plan instead of a one-time reset, <a href=\"/services/residential-cleaning/\">recurring residential cleaning</a> picks up right where a deep clean leaves off. And if this is ahead of a sale or new tenant rather than your own move, our <a href=\"/services/real-estate-property-turnover/\">real estate turnover cleaning</a> is built specifically for that handoff.",
+        "Available throughout San Diego, La Jolla, Pacific Beach, Chula Vista, Coronado, National City, Point Loma, Mission Valley, Clairemont, Carlsbad, and Encinitas. Timed around your moving date or your schedule, not ours."
+      ],
+      "serviceType": "Move-In/Move-Out Cleaning"
+    },
+    {
+      "slug": "office-janitorial",
+      "cardTitle": "Office & Janitorial",
+      "h1": "Office & Janitorial Cleaning in San Diego",
+      "metaTitle": "Office Cleaning & Janitorial Services San Diego | EZClean Pros",
+      "metaDescription": "Daily, weekly, or custom janitorial plans for small and mid-size San Diego businesses. Lobbies, break rooms, restrooms, common areas. Call (858) 370-5205.",
+      "tags": ["Daily", "Weekly", "Custom plans"],
+      "shortDesc": "Daily, weekly, or custom cleaning plans for small and mid-size businesses: lobbies, break rooms, restrooms, and common areas kept client-ready.",
+      "body": [
+        "A clean office isn't just about appearances — it's part of how clients and employees experience the business every single day. EZClean Pros runs daily, weekly, or fully custom janitorial plans for small and mid-size businesses across San Diego, keeping lobbies, break rooms, restrooms, and common areas consistently client-ready.",
+        "Plans are built around how the space actually gets used: high-traffic areas like entryways and restrooms get more frequent attention, while a custom schedule handles everything else on the cadence that makes sense for the business. Trash removal, surface disinfection, floor care, and restocking restroom supplies are all part of a standard visit.",
+        "Because this is a local team rather than a national janitorial contractor, scheduling is flexible — before hours, after hours, or on weekends, whatever keeps the cleaning crew out of the way of the business day.",
+        "Office and janitorial service is available across San Diego and nearby communities including La Jolla, Pacific Beach, Chula Vista, Coronado, National City, Point Loma, Mission Valley, Clairemont, Carlsbad, and Encinitas."
+      ],
+      "serviceType": "Janitorial Services"
+    },
+    {
+      "slug": "real-estate-property-turnover",
+      "cardTitle": "Real Estate & Property Turnover",
+      "h1": "Real Estate & Property Turnover Cleaning in San Diego",
+      "metaTitle": "Real Estate Turnover Cleaning San Diego | EZClean Pros",
+      "metaDescription": "Turn cleans for realtors, property managers, and rental agencies between tenants or ahead of a listing — timed to your schedule. Call (858) 370-5205.",
+      "tags": ["Realtors", "Property managers", "Rental turnover"],
+      "shortDesc": "Turn cleans for realtors, property managers, and rental agencies between tenants or ahead of a listing, timed to your schedule, not ours.",
+      "body": [
+        "Vacant time between tenants, or the window before a listing goes live, is money sitting still. EZClean Pros works with realtors, property managers, and rental agencies across San Diego to turn properties around fast — timed to your schedule, not ours.",
+        "A turnover clean covers the full unit: kitchens and bathrooms fully reset, floors detailed, dust and cobwebs cleared from corners and fixtures, and the space brought to a standard that photographs well and shows well. For listings, that means a property that's ready for a shoot or an open house without a scramble the morning of.",
+        "We work directly with property managers handling multiple units and can coordinate around lockboxes, showings, and contractor schedules — no need for you to be on-site.",
+        "Vacant units that have been sitting a while, or properties with heavier wear, sometimes need more than a standard turn — that's where a full <a href=\"/services/deep-cleaning-move-in-out/\">deep cleaning</a> pass comes in before the standard turnover service.",
+        "Available across San Diego, La Jolla, Pacific Beach, Chula Vista, Coronado, National City, Point Loma, Mission Valley, Clairemont, Carlsbad, and Encinitas. Reach out for a quote on your next turnover."
+      ],
+      "serviceType": "Move-Out/Turnover Cleaning"
+    },
+    {
+      "slug": "vacation-rental-cleaning",
+      "cardTitle": "Vacation Rental Cleaning",
+      "h1": "Vacation Rental Cleaning in San Diego",
+      "metaTitle": "Vacation Rental Cleaning San Diego | EZClean Pros",
+      "metaDescription": "Turnover cleaning for vacation homes and seasonal rentals in San Diego — fresh linens, full kitchen & bathroom reset, guest-ready walkthrough. Call (858) 370-5205.",
+      "tags": ["Turnover", "Linen change", "Seasonal"],
+      "shortDesc": "Turnover cleaning for vacation homes and seasonal properties: fresh linens, a full reset of the kitchen and bathrooms, and a walkthrough before the next arrival, whether that's you or a guest.",
+      "body": [
+        "Vacation rentals live and die by their reviews, and nothing tanks a review faster than a guest walking into a property that still feels like the last group left ten minutes ago. EZClean Pros handles turnover cleaning for vacation homes and seasonal properties across San Diego: fresh linens, a full reset of the kitchen and bathrooms, and a walkthrough before the next arrival — whether that's you or a guest.",
+        "Every turnover includes a full linen change and remake, kitchen and bathroom sanitizing, trash removal, restocking of basics if you keep supplies on-site, and a final walkthrough to catch anything a first pass might miss — water spots, stray items left behind, anything out of place.",
+        "This service is built to work with your booking calendar, whether that's a handful of stays a month or a tight back-to-back schedule during peak season. Coordinating around lockbox codes and check-in/check-out times is part of the job, not an extra ask.",
+        "Running the property through Airbnb or another short-term platform with fast same-day turns? Our dedicated <a href=\"/services/airbnb-turnover-cleaning/\">Airbnb turnover cleaning</a> service is built around those tighter booking windows.",
+        "Serving vacation properties throughout San Diego, La Jolla, Pacific Beach, Chula Vista, Coronado, National City, Point Loma, Mission Valley, Clairemont, Carlsbad, and Encinitas."
+      ],
+      "serviceType": "Vacation Rental Cleaning"
+    },
+    {
+      "slug": "airbnb-turnover-cleaning",
+      "cardTitle": "Airbnb Turnover Cleaning",
+      "h1": "Airbnb Turnover Cleaning in San Diego",
+      "metaTitle": "Airbnb Turnover Cleaning San Diego | EZClean Pros",
+      "metaDescription": "Fast, same-day Airbnb turnovers in San Diego — beds made, amenities restocked, damage & inventory checked, guest-ready before check-in. Call (858) 370-5205.",
+      "tags": ["Same-day turnover", "Restocking", "Guest-ready"],
+      "shortDesc": "Fast, same-day turnovers between bookings: beds made, amenities restocked, damage and inventory checked, and the space confirmed guest-ready before the next check-in.",
+      "body": [
+        "Same-day Airbnb turnovers don't leave room for a cleaner who's running late or a team that needs a heads-up a day in advance. EZClean Pros specializes in fast, same-day turnovers between bookings across San Diego: beds made, amenities restocked, damage and inventory checked, and the space confirmed guest-ready before the next check-in.",
+        "Every turnover follows a consistent checklist so nothing gets missed under time pressure — fresh linens and towels, bathroom and kitchen reset, trash out, amenities and welcome items restocked, and a quick inventory and damage check so you know about any issues before your next guest does.",
+        "As an Airbnb or short-term rental host, reliability is the whole game. We coordinate directly around your booking platform's checkout and check-in windows, including tight same-day turns between back-to-back reservations.",
+        "Bookings running longer-term, or turnarounds that don't need to happen same-day? Standard <a href=\"/services/vacation-rental-cleaning/\">vacation rental cleaning</a> covers the same ground with more breathing room between guests.",
+        "Available for short-term rental turnovers throughout San Diego, La Jolla, Pacific Beach, Chula Vista, Coronado, National City, Point Loma, Mission Valley, Clairemont, Carlsbad, and Encinitas."
+      ],
+      "serviceType": "Airbnb Turnover Cleaning"
+    }
+  ]
+}

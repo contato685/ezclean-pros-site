@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{META_TITLE}}</title>
+<meta name="description" content="{{META_DESCRIPTION}}">
+<link rel="canonical" href="{{CANONICAL}}">
+<meta property="og:type" content="website">
+<meta property="og:title" content="{{META_TITLE}}">
+<meta property="og:description" content="{{META_DESCRIPTION}}">
+<meta property="og:url" content="{{CANONICAL}}">
+<meta property="og:image" content="{{OG_IMAGE}}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{META_TITLE}}">
+<meta name="twitter:description" content="{{META_DESCRIPTION}}">
+<meta name="twitter:image" content="{{OG_IMAGE}}">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+{{JSONLD}}
+<style>
+  :root { --navy: #0E2A63; --green: #6DB33F; --ink: #1a1f2b; --muted: #5b6273; --bg: #f7f8fb; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Hanken Grotesk', -apple-system, BlinkMacSystemFont, sans-serif; color: var(--ink); background: #fff; line-height: 1.6; }
+  a { color: inherit; }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
+  header.site { background: var(--navy); color: #fff; }
+  header.site .wrap { display: flex; align-items: center; justify-content: space-between; padding: 20px 24px; }
+  .logo { font-weight: 700; font-size: 20px; text-decoration: none; color: #fff; letter-spacing: -0.01em; }
+  .home-link { color: #cfd9f2; text-decoration: none; font-weight: 500; font-size: 15px; }
+  .home-link:hover { color: #fff; }
+  .hero { background: linear-gradient(180deg, var(--navy) 0%, #123a86 100%); color: #fff; padding: 56px 0 64px; }
+  .hero h1 { font-size: clamp(28px, 4vw, 42px); font-weight: 700; line-height: 1.15; max-width: 720px; }
+  .hero p.lede { margin-top: 16px; font-size: 18px; color: #dbe3f7; max-width: 620px; }
+  .breadcrumb { font-size: 13px; color: #9aa2b6; margin-bottom: 10px; }
+  .breadcrumb a { text-decoration: none; color: #cfd9f2; }
+  main { padding: 48px 0 8px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; margin-bottom: 40px; }
+  .card { display: block; text-decoration: none; background: #fff; border: 1px solid #E7ECF1; border-radius: 20px; padding: 30px 28px; transition: border-color .15s, box-shadow .15s, transform .15s; }
+  .card:hover { border-color: #C7D6E8; box-shadow: 0 14px 34px rgba(14,42,99,0.08); transform: translateY(-2px); }
+  .card .num { font-size: 28px; font-weight: 500; color: var(--green); }
+  .card h2 { font-size: 20px; font-weight: 700; color: var(--navy); margin: 10px 0 8px; letter-spacing: -0.01em; }
+  .card p { font-size: 15px; color: var(--muted); margin: 0; }
+  .cta { background: var(--bg); border-radius: 16px; padding: 32px; margin: 40px 0; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px; }
+  .cta h2 { font-size: 22px; margin-bottom: 6px; }
+  .cta p { color: var(--muted); margin: 0; font-size: 15px; }
+  .cta-actions { display: flex; gap: 12px; flex-wrap: wrap; }
+  .btn { display: inline-block; padding: 12px 22px; border-radius: 10px; font-weight: 600; text-decoration: none; font-size: 15px; }
+  .btn-primary { background: var(--green); color: #0b2a0f; }
+  .btn-primary:hover { filter: brightness(1.05); }
+  .btn-secondary { background: #fff; color: var(--navy); border: 1px solid #d7dcea; }
+  footer.site { border-top: 1px solid #e7e9f0; margin-top: 40px; padding: 32px 0 48px; color: var(--muted); font-size: 14px; }
+  footer.site .wrap { display: flex; flex-direction: column; gap: 6px; }
+  footer.site a { text-decoration: underline; }
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="wrap">
+    <a class="logo" href="/">EZClean Pros</a>
+    <a class="home-link" href="/#contact">Get a quote</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <nav class="breadcrumb"><a href="/">Home</a> / Services</nav>
+    <h1>Cleaning Services in San Diego</h1>
+    <p class="lede">Residential, commercial, vacation rental, and Airbnb turnover cleaning across San Diego and the surrounding coast and inland communities.</p>
+  </div>
+</section>
+
+<main class="wrap">
+  <div class="grid">
+{{SERVICE_CARDS}}
+  </div>
+
+  <div class="cta">
+    <div>
+      <h2>Ready for a quote?</h2>
+      <p>We'll respond within a few hours during business hours.</p>
+    </div>
+    <div class="cta-actions">
+      <a class="btn btn-primary" href="/#contact">Request a Quote</a>
+      <a class="btn btn-secondary" href="tel:{{PHONE_HREF}}">Call {{PHONE_DISPLAY}}</a>
+    </div>
+  </div>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div><strong>EZClean Pros</strong> — {{TAGLINE}}</div>
+    <div>Serving: {{AREAS_LIST}}</div>
+    <div><a href="tel:{{PHONE_HREF}}">{{PHONE_DISPLAY}}</a> · <a href="mailto:{{EMAIL}}">{{EMAIL}}</a> · <a href="/">ezcleaning.services</a></div>
+  </div>
+</footer>
+</body>
+</html>

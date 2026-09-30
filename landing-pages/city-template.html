@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{META_TITLE}}</title>
+<meta name="description" content="{{META_DESCRIPTION}}">
+<link rel="canonical" href="{{CANONICAL}}">
+<meta property="og:type" content="website">
+<meta property="og:title" content="{{META_TITLE}}">
+<meta property="og:description" content="{{META_DESCRIPTION}}">
+<meta property="og:url" content="{{CANONICAL}}">
+<meta property="og:image" content="{{OG_IMAGE}}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{META_TITLE}}">
+<meta name="twitter:description" content="{{META_DESCRIPTION}}">
+<meta name="twitter:image" content="{{OG_IMAGE}}">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+{{JSONLD}}
+<style>
+  :root {
+    --navy: #0E2A63; --navy-ink: #0E1E38; --blue: #1E5FD0; --green: #6DB33F; --green-light: #8FD05A;
+    --bg: #F3F6F9; --border: #E7ECF1; --border-light: #E1E8F0; --input-border: #D8E0EA;
+    --muted: #4E5A70; --muted-2: #556278; --muted-3: #6B7688; --label: #3B475C; --gold: #F5A623;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Hanken Grotesk', -apple-system, BlinkMacSystemFont, sans-serif; color: var(--navy-ink); background: #fff; line-height: 1.6; }
+  a { color: inherit; }
+  .wrap { max-width: 1240px; margin: 0 auto; padding: 0 40px; }
+  @media (max-width: 640px) { .wrap { padding: 0 20px; } section { padding-left: 20px !important; padding-right: 20px !important; } }
+
+  header.site { background: var(--navy); position: relative; z-index: 10; }
+  header.site .bar { max-width: 1240px; margin: 0 auto; padding: 16px 40px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+  .logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+  .logo span { font-weight: 700; font-size: 18px; color: #fff; letter-spacing: -0.01em; }
+  .logo img { height: 44px; width: auto; display: block; border-radius: 11px; background: #fff; }
+  .breadcrumb-nav { font-size: 13px; color: #9FB5D6; }
+  .breadcrumb-nav a { text-decoration: none; color: #9FB5D6; }
+  .breadcrumb-nav a:hover { color: #fff; }
+  .header-cta { display: inline-flex; align-items: center; padding: 11px 22px; border-radius: 999px; background: linear-gradient(115deg, var(--green), var(--blue)); color: #fff; font-weight: 600; font-size: 14.5px; text-decoration: none; box-shadow: 0 6px 18px rgba(30,95,208,0.28); }
+
+  section.hero {
+    background:
+      linear-gradient(125deg, rgba(14,42,99,0.07) 0%, rgba(14,42,99,0.164) 60%, rgba(14,42,99,0.188) 100%),
+      {{HERO_BG}} center / cover no-repeat,
+      var(--navy);
+    padding: 80px 40px 96px; position: relative; overflow: hidden; min-height: 100vh;
+  }
+  @media (max-width: 860px) { section.hero { min-height: 0; } }
+  .hero-card { max-width: 540px; border-radius: 26px; padding: 40px 38px; background: linear-gradient(125deg, rgba(109,179,63,0.95) 0%, rgba(30,95,208,0.95) 100%); box-shadow: 0 30px 64px rgba(14,42,99,0.4); position: relative; z-index: 3; }
+  .eyebrow { display: inline-flex; align-items: center; gap: 9px; padding: 6px 14px; border-radius: 999px; background: rgba(255,255,255,0.18); border: 1px solid rgba(255,255,255,0.3); margin-bottom: 22px; }
+  .eyebrow .dot { width: 7px; height: 7px; border-radius: 50%; background: #fff; }
+  .eyebrow span.txt { font-size: 12.5px; font-weight: 600; letter-spacing: 0.05em; color: #fff; text-transform: uppercase; }
+  .hero-card h1 { font-family: 'Hanken Grotesk', sans-serif; font-weight: 600; font-size: clamp(28px, 3.6vw, 42px); line-height: 1.08; letter-spacing: -0.015em; color: #fff; text-wrap: balance; margin: 0 0 18px; }
+  .hero-card p.lede { font-size: 16px; line-height: 1.55; color: rgba(255,255,255,0.94); margin: 0 0 28px; max-width: 480px; }
+  .hero-actions { display: flex; align-items: center; gap: 18px; flex-wrap: wrap; }
+  .btn-pill { display: inline-flex; align-items: center; gap: 9px; padding: 14px 28px; border-radius: 999px; background: #fff; color: var(--navy); font-weight: 700; font-size: 15.5px; text-decoration: none; box-shadow: 0 12px 26px rgba(0,0,0,0.18); }
+  .hero-call { font-size: 15px; font-weight: 600; color: #fff; text-decoration: none; }
+  .hero-word { position: absolute; left: 0; right: 0; bottom: -34px; text-align: center; pointer-events: none; z-index: 1; font-family: 'Hanken Grotesk', sans-serif; font-weight: 600; line-height: 0.8; letter-spacing: -0.02em; color: #fff; opacity: 0.06; font-size: 16vw; white-space: nowrap; }
+
+  .kicker { font-size: 13px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--blue); margin-bottom: 16px; }
+  .kicker.on-dark { color: var(--green-light); }
+  h2.section-h { font-family: 'Hanken Grotesk', sans-serif; font-weight: 600; font-size: clamp(28px, 3.2vw, 40px); line-height: 1.1; letter-spacing: -0.01em; color: var(--navy-ink); text-wrap: balance; margin: 0 0 18px; }
+  h2.section-h.on-dark { color: #fff; }
+  .section-intro { max-width: 620px; margin-bottom: 44px; }
+  .section-intro p { font-size: 17px; line-height: 1.6; color: var(--muted); margin: 0; }
+  .section-intro p.on-dark { color: #B4C4DE; }
+
+  section.copy { background: #fff; padding: 72px 40px; }
+  section.copy .wrap { max-width: 780px; }
+  section.copy p { font-size: 17px; line-height: 1.65; color: #2b3242; margin-bottom: 18px; }
+  section.copy p a { color: var(--navy); text-decoration: underline; text-decoration-color: #b9c3d6; text-underline-offset: 2px; }
+  section.copy p a:hover { text-decoration-color: var(--navy); }
+
+  section.services { background: var(--bg); padding: 96px 40px; }
+  .svc-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+  @media (max-width: 680px) { .svc-grid { grid-template-columns: 1fr; } }
+  .svc-card { background: #fff; border: 1px solid var(--border); border-radius: 20px; padding: 30px 28px; display: flex; flex-direction: column; gap: 12px; text-decoration: none; transition: border-color .15s, box-shadow .15s; }
+  .svc-card:hover { border-color: #C7D6E8; box-shadow: 0 14px 34px rgba(14,42,99,0.08); }
+  .svc-card .num { font-family: 'Hanken Grotesk', sans-serif; font-size: 28px; font-weight: 500; color: var(--green); }
+  .svc-card h3 { font-size: 19px; font-weight: 700; color: var(--navy); margin: 0; letter-spacing: -0.01em; }
+  .svc-card p { font-size: 14.5px; line-height: 1.55; color: var(--muted-2); margin: 0; }
+
+  section.why { background: #fff; padding: 96px 40px; }
+  .reasons-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 26px 40px; }
+  @media (max-width: 680px) { .reasons-grid { grid-template-columns: 1fr; } }
+  .reason .num-row { display: flex; align-items: center; gap: 12px; margin-bottom: 9px; }
+  .reason .num { font-family: 'Hanken Grotesk', sans-serif; font-size: 24px; font-weight: 500; color: var(--green); }
+  .reason h3 { font-size: 18px; font-weight: 700; color: var(--navy); margin: 0; letter-spacing: -0.01em; }
+  .reason p { font-size: 15px; line-height: 1.56; color: var(--muted-2); margin: 0; }
+
+  section.faq { background: #fff; padding: 96px 40px; }
+  .faq-list { display: flex; flex-direction: column; gap: 14px; max-width: 760px; }
+  .faq-item { background: var(--bg); border: 1px solid var(--border); border-radius: 16px; padding: 22px 26px; }
+  .faq-item summary { font-size: 17px; font-weight: 700; color: var(--navy); cursor: pointer; list-style: none; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+  .faq-item summary::-webkit-details-marker { display: none; }
+  .faq-item summary::after { content: '+'; flex: none; font-size: 22px; font-weight: 500; color: var(--blue); }
+  .faq-item[open] summary::after { content: '−'; }
+  .faq-item p { font-size: 15.5px; line-height: 1.6; color: var(--muted-2); margin: 14px 0 0; }
+
+  section.review { background: var(--bg); padding: 96px 40px; }
+  .review-card { max-width: 680px; background: #fff; border: 1px solid var(--border); border-radius: 20px; padding: 36px 38px; display: flex; flex-direction: column; gap: 16px; }
+  .review-stars { color: var(--gold); font-size: 18px; letter-spacing: 3px; }
+  .review-quote { font-size: 17px; line-height: 1.62; color: #3B475C; margin: 0; }
+  .review-meta { display: flex; align-items: center; gap: 10px; }
+  .review-name { font-size: 15px; font-weight: 700; color: var(--navy); }
+  .review-dot { width: 4px; height: 4px; border-radius: 50%; background: #C7D0DE; }
+  .review-place { font-size: 14px; color: var(--muted-3); }
+
+  section.contact { background: #fff; padding: 96px 40px 108px; }
+  .contact-grid { display: grid; grid-template-columns: 0.85fr 1.15fr; gap: 40px; align-items: stretch; }
+  @media (max-width: 1024px) { .contact-grid { grid-template-columns: 1fr; } }
+  .contact-panel { background: linear-gradient(150deg, var(--navy), var(--blue)); border-radius: 24px; padding: 44px 40px; color: #fff; display: flex; flex-direction: column; }
+  .contact-panel h2 { font-family: 'Hanken Grotesk', sans-serif; font-weight: 600; font-size: clamp(26px, 3vw, 36px); line-height: 1.1; margin: 0 0 18px; text-wrap: balance; }
+  .contact-panel p { font-size: 16px; line-height: 1.6; color: #C6D5EC; margin: 0 0 38px; }
+  .contact-rows { display: flex; flex-direction: column; gap: 22px; margin-top: auto; }
+  .contact-row { display: flex; align-items: center; gap: 14px; }
+  .contact-row .icon { flex: none; width: 42px; height: 42px; border-radius: 12px; background: rgba(255,255,255,0.12); display: flex; align-items: center; justify-content: center; font-size: 18px; }
+  .contact-row .label { font-size: 12px; color: #9FB5D6; text-transform: uppercase; letter-spacing: 0.06em; }
+  .contact-row a, .contact-row .value { font-size: 16px; font-weight: 600; color: #fff; text-decoration: none; }
+
+  form#lead-form { background: var(--bg); border: 1px solid var(--border); border-radius: 24px; padding: 40px; display: flex; flex-direction: column; gap: 18px; }
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+  @media (max-width: 560px) { .form-row { grid-template-columns: 1fr; } }
+  label.field { display: flex; flex-direction: column; gap: 7px; }
+  label.field span { font-size: 13px; font-weight: 600; color: var(--label); }
+  label.field input, label.field select, label.field textarea {
+    padding: 13px 15px; border-radius: 11px; border: 1px solid var(--input-border); background: #fff;
+    font-size: 15px; color: #10203B; font-family: inherit; outline: none;
+  }
+  label.field input:focus, label.field select:focus, label.field textarea:focus { border-color: var(--blue); }
+  form#lead-form button {
+    margin-top: 4px; padding: 15px; border-radius: 11px; border: none; cursor: pointer;
+    background: linear-gradient(115deg, var(--green), var(--blue)); color: #fff; font-weight: 700; font-size: 16px;
+    box-shadow: 0 10px 24px rgba(30,95,208,0.26);
+  }
+  form#lead-form button:hover { filter: brightness(1.05); }
+  form#lead-form button:disabled { opacity: 0.6; cursor: default; filter: none; }
+  .form-note { font-size: 13.5px; color: var(--muted-3); text-align: center; margin: 0; }
+
+  footer.site { padding: 64px 40px 30px; position: relative; background-color: #10306F; overflow: hidden; }
+  footer.site .top { display: flex; align-items: flex-start; justify-content: space-between; gap: 40px; flex-wrap: wrap; padding-bottom: 44px; border-bottom: 1px solid rgba(255,255,255,0.12); }
+  footer.site .brand { max-width: 320px; }
+  footer.site .brand .row { display: flex; align-items: center; gap: 11px; margin-bottom: 16px; }
+  footer.site .brand .row span { font-weight: 700; font-size: 18px; color: #fff; }
+  footer.site .brand p { font-size: 15px; line-height: 1.6; color: #9FB0CC; margin: 0; }
+  footer.site .cols { display: flex; gap: 64px; flex-wrap: wrap; }
+  footer.site .col-title { font-size: 13px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--green); margin-bottom: 16px; }
+  footer.site .col-links { display: flex; flex-direction: column; gap: 11px; }
+  footer.site .col-links a, footer.site .col-links span { color: #B7C4DC; font-size: 15px; text-decoration: none; }
+  footer.site .bottom { display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; padding-top: 22px; }
+  footer.site .bottom span { font-size: 14px; color: #7E8FAE; }
+  footer.site .word { position: absolute; left: 0; right: 0; bottom: -30px; text-align: center; pointer-events: none; font-family: 'Hanken Grotesk', sans-serif; font-weight: 600; line-height: 0.8; letter-spacing: -0.02em; color: #fff; opacity: 0.05; white-space: nowrap; font-size: 12vw; }
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="bar">
+    <a class="logo" href="/">
+      <img src="/assets/logo.jpg" alt="EZClean Pros">
+    </a>
+    <nav class="breadcrumb-nav"><a href="/">Home</a> / <a href="/cities/">Cities</a> / {{CITY_NAME}}</nav>
+    <a class="header-cta" href="#quote">Get a Free Quote</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-card">
+      <div class="eyebrow"><span class="dot"></span><span class="txt">Serving {{CITY_NAME}}, CA</span></div>
+      <h1>{{H1}}</h1>
+      <p class="lede">{{LEDE}}</p>
+      <div class="hero-actions">
+        <a class="btn-pill" href="#quote">Get a Free Quote <span>→</span></a>
+        <a class="hero-call" href="tel:{{PHONE_HREF}}">or call {{PHONE_DISPLAY}}</a>
+      </div>
+      <div style="margin-top:24px; display:inline-flex; align-items:center; gap:10px; background:rgba(255,255,255,0.96); border-radius:14px; padding:10px 16px; box-shadow:0 10px 24px rgba(14,42,99,0.18);">
+        <svg width="20" height="20" viewBox="0 0 48 48" aria-hidden="true" style="flex:none; display:block;">
+          <path fill="#4285F4" d="M45.1 24.5c0-1.6-.1-3.2-.4-4.7H24v9h11.8c-.5 2.8-2.1 5.1-4.4 6.7v5.6h7.1c4.2-3.9 6.6-9.6 6.6-16.6z"/>
+          <path fill="#34A853" d="M24 46c5.9 0 10.9-2 14.5-5.3l-7.1-5.6c-2 1.3-4.5 2.1-7.4 2.1-5.7 0-10.5-3.8-12.2-9h-7.3v5.8C7.9 40.9 15.3 46 24 46z"/>
+          <path fill="#FBBC05" d="M11.8 28.2c-.4-1.3-.7-2.7-.7-4.2s.3-2.9.7-4.2v-5.8H4.5A22 22 0 0 0 2 24c0 3.6.9 6.9 2.5 9.9l7.3-5.7z"/>
+          <path fill="#EA4335" d="M24 10.8c3.2 0 6.1 1.1 8.4 3.3l6.3-6.3C34.9 4.2 29.9 2 24 2 15.3 2 7.9 7.1 4.5 14.2l7.3 5.8c1.7-5.2 6.5-9.2 12.2-9.2z"/>
+        </svg>
+        <span style="color:#F5A623; font-size:14px; letter-spacing:2px;">★★★★★</span>
+        <span style="font-size:14px; font-weight:700; color:#0E2A63;">5.0</span>
+        <span style="font-size:13px; font-weight:500; color:#556278;">Google Rating</span>
+      </div>
+    </div>
+  </div>
+  <div class="hero-word">EZClean Pros</div>
+</section>
+
+<section class="copy">
+  <div class="wrap">
+    {{BODY_HTML}}
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="wrap">
+    <div class="section-intro">
+      <div class="kicker">What We Do</div>
+      <h2 class="section-h">Services in {{CITY_NAME}}</h2>
+      <p>Same checklist, every visit — whether it's a recurring clean or a one-time turnover.</p>
+    </div>
+    <div class="svc-grid">
+{{SERVICE_CARDS}}
+    </div>
+  </div>
+</section>
+
+<section class="why" id="why">
+  <div class="wrap">
+    <div class="section-intro">
+      <div class="kicker">Why EZClean Pros</div>
+      <h2 class="section-h">What you're actually paying for.</h2>
+    </div>
+    <div class="reasons-grid">
+{{REASON_CARDS}}
+    </div>
+  </div>
+</section>
+
+<section class="faq" id="faq">
+  <div class="wrap">
+    <div class="section-intro">
+      <div class="kicker">FAQ</div>
+      <h2 class="section-h">Common questions in {{CITY_NAME}}.</h2>
+    </div>
+    <div class="faq-list">
+{{FAQ_ITEMS}}
+    </div>
+  </div>
+</section>
+
+<section class="review" id="reviews">
+  <div class="wrap">
+    <div class="section-intro">
+      <div class="kicker">What {{CITY_NAME}} Clients Say</div>
+      <h2 class="section-h">A review from {{CITY_NAME}}.</h2>
+    </div>
+    <div class="review-card">
+      <div class="review-stars">{{REVIEW_STARS}}</div>
+      <p class="review-quote">&ldquo;{{REVIEW_QUOTE}}&rdquo;</p>
+      <div class="review-meta">
+        <span class="review-name">{{REVIEW_NAME}}</span>
+        <span class="review-dot"></span>
+        <span class="review-place">{{CITY_NAME}}</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="quote">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div class="contact-panel">
+        <div class="kicker on-dark">Get In Touch</div>
+        <h2>Request a quote in {{CITY_NAME}}.</h2>
+        <p>Tell us about the space and we'll follow up with pricing and the next available appointment.</p>
+        <div class="contact-rows">
+          <div class="contact-row">
+            <span class="icon">☎</span>
+            <div><div class="label">Phone</div><a href="tel:{{PHONE_HREF}}">{{PHONE_DISPLAY}}</a></div>
+          </div>
+          <div class="contact-row">
+            <span class="icon">✉</span>
+            <div><div class="label">Email</div><a href="mailto:{{EMAIL}}">{{EMAIL}}</a></div>
+          </div>
+          <div class="contact-row">
+            <span class="icon">⚲</span>
+            <div><div class="label">Serving</div><div class="value">{{CITY_NAME}}, CA</div></div>
+          </div>
+        </div>
+      </div>
+      <form id="lead-form">
+        <div class="form-row">
+          <label class="field"><span>Name</span><input type="text" name="name" placeholder="Your name" required></label>
+          <label class="field"><span>Phone</span><input type="tel" name="phone" id="phone-input" placeholder="(xxx) xxx-xxxx" maxlength="14" required></label>
+        </div>
+        <div class="form-row">
+          <label class="field"><span>Email</span><input type="email" name="email" placeholder="you@email.com" required></label>
+          <label class="field"><span>City</span><input type="text" name="city" value="{{CITY_NAME}}" required></label>
+        </div>
+        <label class="field"><span>Service</span>
+          <select name="service" required>
+            <option>Residential Cleaning</option>
+            <option>Deep Clean / Move-out Detailing</option>
+            <option>Office &amp; Janitorial</option>
+            <option>Real Estate Turnover</option>
+            <option>Vacation Cleaning Checklist</option>
+            <option>Airbnb Cleaning Checklist</option>
+          </select>
+        </label>
+        <label class="field"><span>Details</span><textarea rows="4" name="details" placeholder="Tell us about the space…"></textarea></label>
+        <button type="submit">Request a Quote</button>
+        <p class="form-note">We'll respond within a few hours during business hours.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="top">
+      <div class="brand">
+        <div class="row"><span>EZClean Pros</span></div>
+        <p>{{TAGLINE}}</p>
+      </div>
+      <div class="cols">
+        <div>
+          <div class="col-title">Services</div>
+          <div class="col-links">
+{{FOOTER_SERVICE_LINKS}}
+          </div>
+        </div>
+        <div>
+          <div class="col-title">Contact</div>
+          <div class="col-links">
+            <a href="tel:{{PHONE_HREF}}">{{PHONE_DISPLAY}}</a>
+            <a href="mailto:{{EMAIL}}">{{EMAIL}}</a>
+            <span>Serving {{CITY_NAME}}, CA</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bottom">
+      <span>© 2026 EZClean Pros. San Diego, CA.</span>
+      <span>Bonded &amp; Insured · San Diego, California</span>
+    </div>
+  </div>
+  <div class="word">EZClean Pros</div>
+</footer>
+
+<script>
+(function () {
+  'use strict';
+
+  // ---- phone mask (same digit-formatting logic as the main site form) ----
+  var phoneInput = document.getElementById('phone-input');
+  phoneInput.addEventListener('input', function (e) {
+    var digits = '';
+    var raw = e.target.value;
+    for (var i = 0; i < raw.length; i++) {
+      if (raw[i] >= '0' && raw[i] <= '9') digits += raw[i];
+    }
+    digits = digits.slice(0, 10);
+    var formatted = digits;
+    if (digits.length > 6) formatted = '(' + digits.slice(0, 3) + ') ' + digits.slice(3, 6) + '-' + digits.slice(6);
+    else if (digits.length > 3) formatted = '(' + digits.slice(0, 3) + ') ' + digits.slice(3);
+    else if (digits.length > 0) formatted = '(' + digits;
+    e.target.value = formatted;
+  });
+
+  // ---- campaign attribution: same rule as the main site (last non-direct click, 90-day expiry, allowlisted params only) ----
+  var EZ_ATTRIBUTION_KEY = 'ezcleaning_lead_attribution';
+  var EZ_ATTRIBUTION_PARAMS = ['utm_source', 'utm_medium', 'utm_campaign', 'gclid'];
+  var EZ_ATTRIBUTION_MAX_AGE_MS = 90 * 24 * 60 * 60 * 1000;
+  var EZ_ATTRIBUTION_MAX_LEN = 500;
+
+  function ezNormalizeAttributionValue(raw) {
+    if (typeof raw !== 'string') return '';
+    return raw.trim().slice(0, EZ_ATTRIBUTION_MAX_LEN);
+  }
+  function ezReadStoredAttribution() {
+    try {
+      var raw = localStorage.getItem(EZ_ATTRIBUTION_KEY);
+      if (!raw) return null;
+      var parsed = JSON.parse(raw);
+      if (!parsed || typeof parsed !== 'object' || typeof parsed.captured_at !== 'number') return null;
+      if (Date.now() - parsed.captured_at > EZ_ATTRIBUTION_MAX_AGE_MS) return null;
+      return parsed;
+    } catch (e) { return null; }
+  }
+  function captureAttribution() {
+    try {
+      var params = new URLSearchParams(window.location.search);
+      var current = {};
+      var hasAny = false;
+      EZ_ATTRIBUTION_PARAMS.forEach(function (key) {
+        var value = ezNormalizeAttributionValue(params.get(key));
+        if (value) { current[key] = value; hasAny = true; }
+      });
+      if (!hasAny) return;
+      var existing = ezReadStoredAttribution() || {};
+      var merged = { captured_at: Date.now() };
+      EZ_ATTRIBUTION_PARAMS.forEach(function (key) {
+        merged[key] = current[key] || existing[key] || '';
+      });
+      localStorage.setItem(EZ_ATTRIBUTION_KEY, JSON.stringify(merged));
+    } catch (e) { /* localStorage unavailable — skip silently */ }
+  }
+  function getStoredAttributionForSubmit() {
+    var stored = ezReadStoredAttribution();
+    var out = {};
+    EZ_ATTRIBUTION_PARAMS.forEach(function (key) {
+      out[key] = (stored && stored[key]) || '';
+    });
+    return out;
+  }
+  captureAttribution();
+
+  // ---- form submit — same payload shape and endpoint as the main site form ----
+  var form = document.getElementById('lead-form');
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var btn = form.querySelector('button[type=submit]');
+    var data = new FormData(form);
+    var payload = Object.fromEntries(data.entries());
+    var attribution = getStoredAttributionForSubmit();
+    payload.utm_source = attribution.utm_source;
+    payload.utm_medium = attribution.utm_medium;
+    payload.utm_campaign = attribution.utm_campaign;
+    payload.gclid = attribution.gclid;
+    if (btn) { btn.disabled = true; }
+    fetch('/api/lead', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(payload) })
+      .then(function (res) { return res.json().then(function (body) { return { ok: res.ok, body: body }; }); })
+      .then(function (result) {
+        if (result.ok && result.body.success) { form.reset(); window.location.href = '/subscribed'; }
+        else { alert((result.body && result.body.error) || 'Erro ao enviar. Tente novamente.'); }
+      })
+      .catch(function () { alert('Erro ao enviar. Tente novamente.'); })
+      .finally(function () { if (btn) { btn.disabled = false; } });
+  });
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{META_TITLE}}</title>
+<meta name="description" content="{{META_DESCRIPTION}}">
+<link rel="canonical" href="{{CANONICAL}}">
+<meta property="og:type" content="website">
+<meta property="og:title" content="{{META_TITLE}}">
+<meta property="og:description" content="{{META_DESCRIPTION}}">
+<meta property="og:url" content="{{CANONICAL}}">
+<meta property="og:image" content="{{OG_IMAGE}}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{META_TITLE}}">
+<meta name="twitter:description" content="{{META_DESCRIPTION}}">
+<meta name="twitter:image" content="{{OG_IMAGE}}">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+{{JSONLD}}
+<style>
+  :root { --navy: #0E2A63; --green: #6DB33F; --ink: #1a1f2b; --muted: #5b6273; --bg: #f7f8fb; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Hanken Grotesk', -apple-system, BlinkMacSystemFont, sans-serif; color: var(--ink); background: #fff; line-height: 1.6; }
+  a { color: inherit; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 24px; }
+  header.site { background: var(--navy); color: #fff; }
+  header.site .wrap { display: flex; align-items: center; justify-content: space-between; padding: 20px 24px; }
+  .logo { font-weight: 700; font-size: 20px; text-decoration: none; color: #fff; letter-spacing: -0.01em; }
+  .home-link { color: #cfd9f2; text-decoration: none; font-weight: 500; font-size: 15px; }
+  .home-link:hover { color: #fff; }
+  .hero { background: linear-gradient(180deg, var(--navy) 0%, #123a86 100%); color: #fff; padding: 56px 0 64px; }
+  .hero h1 { font-size: clamp(28px, 4vw, 42px); font-weight: 700; line-height: 1.15; max-width: 720px; }
+  .hero p.lede { margin-top: 16px; font-size: 18px; color: #dbe3f7; max-width: 620px; }
+  .tags { margin-top: 20px; display: flex; flex-wrap: wrap; gap: 8px; }
+  .tag { background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.25); color: #fff; font-size: 13px; padding: 5px 12px; border-radius: 999px; }
+  main { padding: 48px 0 8px; }
+  main p { margin-bottom: 18px; font-size: 17px; color: #2b3242; }
+  main p a { color: var(--navy); text-decoration: underline; text-decoration-color: #b9c3d6; text-underline-offset: 2px; }
+  main p a:hover { text-decoration-color: var(--navy); }
+  .areas { margin-top: 8px; font-size: 15px; color: var(--muted); }
+  .cta { background: var(--bg); border-radius: 16px; padding: 32px; margin: 40px 0; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px; }
+  .cta h2 { font-size: 22px; margin-bottom: 6px; }
+  .cta p { color: var(--muted); margin: 0; font-size: 15px; }
+  .cta-actions { display: flex; gap: 12px; flex-wrap: wrap; }
+  .btn { display: inline-block; padding: 12px 22px; border-radius: 10px; font-weight: 600; text-decoration: none; font-size: 15px; }
+  .btn-primary { background: var(--green); color: #0b2a0f; }
+  .btn-primary:hover { filter: brightness(1.05); }
+  .btn-secondary { background: #fff; color: var(--navy); border: 1px solid #d7dcea; }
+  footer.site { border-top: 1px solid #e7e9f0; margin-top: 40px; padding: 32px 0 48px; color: var(--muted); font-size: 14px; }
+  footer.site .wrap { display: flex; flex-direction: column; gap: 6px; }
+  footer.site a { text-decoration: underline; }
+  .breadcrumb { font-size: 13px; color: #9aa2b6; margin-bottom: 10px; }
+  .breadcrumb a { text-decoration: none; color: #cfd9f2; }
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="wrap">
+    <a class="logo" href="/">EZClean Pros</a>
+    <a class="home-link" href="/services/">All services</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <nav class="breadcrumb"><a href="/">Home</a> / <a href="/services/">Services</a> / {{CARD_TITLE}}</nav>
+    <h1>{{H1}}</h1>
+    <p class="lede">{{SHORT_DESC}}</p>
+    <div class="tags">{{TAGS_HTML}}</div>
+  </div>
+</section>
+
+<main class="wrap">
+  {{BODY_HTML}}
+
+  <div class="cta">
+    <div>
+      <h2>Ready for a quote?</h2>
+      <p>We'll respond within a few hours during business hours.</p>
+    </div>
+    <div class="cta-actions">
+      <a class="btn btn-primary" href="/#contact">Request a Quote</a>
+      <a class="btn btn-secondary" href="tel:{{PHONE_HREF}}">Call {{PHONE_DISPLAY}}</a>
+    </div>
+  </div>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div><strong>EZClean Pros</strong> — {{TAGLINE}}</div>
+    <div>Serving: {{AREAS_LIST}}</div>
+    <div><a href="tel:{{PHONE_HREF}}">{{PHONE_DISPLAY}}</a> · <a href="mailto:{{EMAIL}}">{{EMAIL}}</a> · <a href="/">ezcleaning.services</a></div>
+  </div>
+</footer>
+</body>
+</html>

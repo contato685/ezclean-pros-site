@@ -1,0 +1,736 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Evercoast Cleaning Co. | Palm Beach County House &amp; Office Cleaning</title>
+<meta name="description" content="Recurring house cleaning, deep cleans, move-outs, and office janitorial across Palm Beach County, FL. Local crew, licensed &amp; insured, same-week booking.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2310203A'/%3E%3Ctext x='32' y='43' font-family='Arial,sans-serif' font-weight='700' font-size='32' fill='%23FFFFFF' text-anchor='middle'%3EE%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#10203A;
+    --ink-soft:#42546B;
+    --paper:#F7F8FB;
+    --paper-2:#EEF2F7;
+    --line:#E1E7EF;
+    --accent:#2563A6;
+    --accent-2:#5B9BD1;
+    --accent-soft:#E8F1FA;
+    --white:#FFFFFF;
+    --radius:14px;
+    --serif:'Sora', -apple-system, BlinkMacSystemFont, sans-serif;
+    --sans:'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    --maxw:1180px;
+    --shadow: 0 20px 50px -25px rgba(16,32,58,0.35);
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:var(--sans);
+    color:var(--ink);
+    background:var(--paper);
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  img{max-width:100%; display:block;}
+  a{color:inherit;}
+  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 24px;}
+  h1,h2,h3{font-family:var(--serif); font-weight:600; line-height:1.08; letter-spacing:-0.01em;}
+  .eyebrow{
+    font-family:var(--sans); font-size:12.5px; font-weight:700; letter-spacing:0.14em;
+    text-transform:uppercase; color:var(--accent);
+  }
+  .band-dark .eyebrow{ color:var(--accent-soft); }
+  .btn{
+    display:inline-flex; align-items:center; gap:8px;
+    font-family:var(--sans); font-weight:600; font-size:15px;
+    padding:14px 26px; border-radius:999px; border:1px solid transparent;
+    cursor:pointer; text-decoration:none; transition:transform .18s ease, box-shadow .18s ease, background .18s ease;
+  }
+  .btn-primary{ background:var(--ink); color:var(--paper); box-shadow:var(--shadow); }
+  .btn-primary:hover{ transform:translateY(-2px); box-shadow:0 24px 40px -20px rgba(16,32,58,0.5); }
+  .btn-ghost{ background:transparent; color:var(--ink); border-color:var(--ink); }
+  .btn-ghost:hover{ background:var(--ink); color:var(--paper); }
+  .btn-accent{ background:var(--accent); color:var(--white); }
+  .btn-accent:hover{ transform:translateY(-2px); box-shadow:0 20px 36px -18px rgba(37,99,166,0.5); }
+
+  /* MOTION — scroll reveal */
+  .reveal{
+    opacity:0; transform:translateY(28px);
+    transition:opacity .7s cubic-bezier(.16,1,.3,1), transform .7s cubic-bezier(.16,1,.3,1);
+  }
+  .reveal.in{ opacity:1; transform:translateY(0); }
+  .reveal.reveal-left{ transform:translateX(-36px); }
+  .reveal.reveal-left.in{ transform:translateX(0); }
+  .reveal.reveal-right{ transform:translateX(36px); }
+  .reveal.reveal-right.in{ transform:translateX(0); }
+  .reveal.reveal-fade{ transform:none; transition:opacity .5s ease; }
+  .reveal.reveal-fade.in{ opacity:1; }
+
+  @keyframes heroRise{ from{ opacity:0; transform:translateY(22px); } to{ opacity:1; transform:translateY(0); } }
+  @keyframes heroPop{ from{ opacity:0; transform:translateY(18px) scale(.97); } to{ opacity:1; transform:translateY(0) scale(1); } }
+  .hero-in{ opacity:0; animation:heroRise .8s cubic-bezier(.16,1,.3,1) forwards; }
+  .hero-in.d1{ animation-delay:.05s; }
+  .hero-in.d2{ animation-delay:.18s; }
+  .hero-in.d3{ animation-delay:.32s; }
+  .hero-in.d4{ animation-delay:.46s; }
+  .hero-in.d5{ animation-delay:.58s; }
+  .hero-card.hero-in{ animation-name:heroPop; animation-delay:.52s; }
+
+  @media (prefers-reduced-motion: reduce){
+    .reveal, .hero-in{ animation:none !important; transition:none !important; opacity:1 !important; transform:none !important; }
+    html{ scroll-behavior:auto; }
+  }
+
+  /* NAV — transparent over hero, solid on scroll */
+  header{
+    position:sticky; top:0; z-index:50;
+    background:transparent; border-bottom:1px solid transparent;
+    transition:background .3s ease, border-color .3s ease, backdrop-filter .3s ease;
+  }
+  header.scrolled{ background:rgba(246,243,236,0.9); backdrop-filter:blur(10px); border-bottom:1px solid var(--line); }
+  .nav{ display:flex; align-items:center; justify-content:space-between; height:78px; }
+  .logo{ display:flex; align-items:center; gap:10px; font-family:var(--serif); font-size:20px; font-weight:600; text-decoration:none; color:#fff; transition:color .3s ease; }
+  header.scrolled .logo{ color:var(--ink); }
+  .logo-mark{
+    width:36px; height:36px; border-radius:10px; background:var(--accent);
+    color:var(--ink); display:flex; align-items:center; justify-content:center;
+    font-family:var(--serif); font-size:19px; flex:none;
+  }
+  nav.links{ display:flex; gap:30px; font-size:14.5px; font-weight:500; }
+  nav.links a{ position:relative; padding-bottom:3px; text-decoration:none; color:rgba(255,255,255,0.82); transition:color .3s ease; }
+  nav.links a::after{ content:''; position:absolute; left:0; right:0; bottom:0; height:2px; background:currentColor; transform:scaleX(0); transform-origin:left; transition:transform .3s cubic-bezier(.16,1,.3,1); }
+  nav.links a:hover::after{ transform:scaleX(1); }
+  header.scrolled nav.links a{ color:var(--ink-soft); }
+  nav.links a:hover{ color:var(--accent-soft); }
+  header.scrolled nav.links a:hover{ color:var(--ink); }
+  .nav-cta{ display:flex; align-items:center; gap:18px; }
+  .nav-phone{ font-weight:700; font-size:15px; text-decoration:none; white-space:nowrap; color:#fff; transition:color .3s ease; }
+  header.scrolled .nav-phone{ color:var(--ink); }
+  @media(max-width:860px){ nav.links{display:none;} }
+  @media(max-width:640px){
+    header{ background:rgba(246,243,236,0.96); backdrop-filter:blur(8px); border-bottom:1px solid var(--line); }
+    header .logo, header .nav-phone{ color:var(--ink); }
+    .nav{ height:auto; min-height:64px; padding:12px 0; }
+    .logo{ font-size:15px; gap:8px; line-height:1.15; }
+    .logo-mark{ width:28px; height:28px; font-size:14px; border-radius:8px; }
+    .nav-phone{ display:none; }
+    .nav-cta .btn{ padding:10px 18px; font-size:13.5px; }
+  }
+
+  /* HERO */
+  .hero{ position:relative; margin-top:-78px; padding:170px 0 110px; overflow:hidden; background:var(--ink); color:var(--paper); }
+  .hero-media{ position:absolute; inset:0; z-index:0; }
+  .hero-media img{ width:100%; height:100%; object-fit:cover; object-position:center 25%; }
+  .hero-scrim{
+    position:absolute; inset:0; z-index:1;
+    background:
+      linear-gradient(100deg, rgba(16,32,58,0.74) 0%, rgba(16,32,58,0.58) 34%, rgba(16,32,58,0.28) 62%, rgba(16,32,58,0.08) 100%),
+      linear-gradient(0deg, rgba(16,32,58,0.30) 0%, rgba(16,32,58,0) 22%);
+  }
+  .hero::before{
+    content:''; position:absolute; inset:0; opacity:.5; pointer-events:none; z-index:2;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.06'/%3E%3C/svg%3E");
+  }
+  .hero-shape{ position:absolute; border-radius:50%; filter:blur(2px); z-index:2; }
+  .hero-shape.s1{ width:520px; height:520px; right:-160px; top:-160px; background:radial-gradient(circle at 30% 30%, var(--accent), transparent 70%); opacity:.28;}
+  .hero-shape.s2{ width:360px; height:360px; left:-140px; bottom:-160px; background:radial-gradient(circle at 60% 40%, var(--accent-2), transparent 70%); opacity:.22;}
+  .hero-grid{ position:relative; z-index:3; display:grid; grid-template-columns:1.15fr 0.85fr; gap:56px; align-items:center; }
+  @media(max-width:900px){ .hero-grid{ grid-template-columns:1fr; } }
+  @media(max-width:640px){
+    .hero{ margin-top:0; padding:0 0 60px; }
+    .hero-media{ inset:auto 0 auto 0; top:0; height:260px; }
+    .hero-media img{ object-position:center 30%; }
+    .hero-scrim{
+      background:
+        linear-gradient(180deg, rgba(16,32,58,0.45) 0%, rgba(16,32,58,0.78) 70%, var(--ink) 100%);
+    }
+    .hero-shape{ display:none; }
+    .hero-grid{ padding-top:284px; }
+  }
+  .hero h1{ font-size:clamp(2.4rem, 4.4vw, 3.7rem); margin:14px 0 20px; color:#fff; }
+  .hero h1 em{ font-style:normal; font-weight:800; color:var(--accent-soft); }
+  .hero p.lede{ font-size:18px; color:#A9B8CC; max-width:52ch; margin-bottom:30px; }
+  .hero-actions{ display:flex; gap:14px; flex-wrap:wrap; margin-bottom:34px; }
+  .trust-row{ display:flex; gap:26px; flex-wrap:wrap; font-size:13.5px; color:#A9B8CC; }
+  .trust-row span{ display:flex; align-items:center; gap:8px; font-weight:600; }
+  .dot{ width:6px; height:6px; border-radius:50%; background:var(--accent-soft); flex:none; }
+
+  .hero-card{
+    position:relative; background:rgba(255,255,255,0.94); backdrop-filter:blur(6px); border-radius:22px; padding:30px; color:var(--ink);
+    box-shadow:var(--shadow); border:1px solid rgba(255,255,255,0.6);
+  }
+  .hero-card .tag{ font-size:12px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:var(--accent-2); }
+  .hero-card h3{ font-size:26px; margin:10px 0 16px; }
+  .quote-row{ display:flex; justify-content:space-between; align-items:baseline; padding:13px 0; border-top:1px solid var(--line); font-size:14.5px; }
+  .quote-row:first-of-type{ border-top:none; }
+  .quote-row b{ font-family:var(--serif); font-size:17px; }
+  .hero-card .price-note{ margin-top:16px; font-size:12.5px; color:var(--ink-soft); }
+
+  /* SECTION shared */
+  section{ padding:96px 0; }
+  .section-head{ max-width:640px; margin-bottom:52px; }
+  .section-head h2{ font-size:clamp(1.9rem,3vw,2.6rem); margin-top:12px; }
+  .section-head p{ color:var(--ink-soft); font-size:16.5px; margin-top:14px; }
+  .band-alt{ background:var(--paper-2); }
+  .media-frame{ border-radius:20px; overflow:hidden; box-shadow:var(--shadow); }
+  .media-frame img{ width:100%; height:100%; object-fit:cover; display:block; transition:transform .7s cubic-bezier(.16,1,.3,1); }
+  .media-frame:hover img{ transform:scale(1.06); }
+  .head-media{ display:grid; grid-template-columns:1fr 0.7fr; gap:44px; align-items:center; margin-bottom:52px; }
+  .head-media .media-frame{ aspect-ratio:4/3; }
+  @media(max-width:820px){ .head-media{ grid-template-columns:1fr; } .head-media .media-frame{ order:-1; aspect-ratio:16/9; } }
+  .head-media .section-head{ margin-bottom:0; }
+  .why-media-grid{ display:grid; grid-template-columns:0.85fr 1.15fr; gap:48px; align-items:center; }
+  .why-media-grid .media-frame{ aspect-ratio:3/4; }
+  @media(max-width:820px){ .why-media-grid{ grid-template-columns:1fr; } .why-media-grid .media-frame{ aspect-ratio:16/9; } }
+  .contact-photo-frame{ aspect-ratio:5/4; margin-bottom:26px; max-width:340px; }
+  .band-dark{ background:var(--ink); color:var(--paper); }
+  .band-dark .section-head h2{ color:#fff; }
+  .band-dark .section-head p{ color:#A9B8CC; }
+
+  /* SERVICES */
+  .services-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:22px; }
+  @media(max-width:900px){ .services-grid{ grid-template-columns:repeat(2,1fr);} }
+  @media(max-width:620px){ .services-grid{ grid-template-columns:1fr;} }
+  .svc-card{
+    background:var(--white); border:1px solid var(--line); border-radius:var(--radius);
+    padding:30px 26px; transition:transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+  }
+  .svc-card:hover{ transform:translateY(-6px); box-shadow:var(--shadow); border-color:var(--accent); }
+  .svc-num{ font-family:var(--serif); font-size:14px; color:var(--accent); font-weight:600; }
+  .svc-card h3{ font-size:20px; margin:12px 0 10px; }
+  .svc-card p{ font-size:14.5px; color:var(--ink-soft); }
+
+  /* CHECKLIST */
+  .checklist-layout{ display:grid; grid-template-columns:0.9fr 1.1fr; gap:60px; align-items:start; }
+  @media(max-width:880px){ .checklist-layout{ grid-template-columns:1fr; } }
+  .checklist-intro p{ color:#A9B8CC; font-size:15.5px; margin-top:16px; max-width:42ch; }
+  .checklist-grid{ display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+  @media(max-width:520px){ .checklist-grid{ grid-template-columns:1fr; } }
+  .check-item{
+    background:rgba(255,255,255,0.05); border:1px solid rgba(255,255,255,0.12); border-radius:12px;
+    padding:16px 18px; display:flex; align-items:center; justify-content:space-between; gap:10px;
+    transition:transform .2s ease, background .2s ease, border-color .2s ease;
+  }
+  .check-item:hover{ transform:translateY(-3px); background:rgba(255,255,255,0.09); border-color:rgba(255,255,255,0.24); }
+  .check-item h3{ font-family:var(--sans); font-size:15px; font-weight:600; color:#fff; }
+  .check-item .badge{
+    font-size:10.5px; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--ink); background:var(--accent-soft); padding:4px 10px; border-radius:999px; flex:none;
+  }
+
+  /* WHY */
+  .why-list{ display:flex; flex-direction:column; gap:0; max-width:760px; }
+  .why-row{ display:grid; grid-template-columns:60px 1fr; gap:20px; padding:26px 0; border-top:1px solid var(--line); }
+  .why-row:first-child{ border-top:none; }
+  .why-row .why-idx{ font-family:var(--serif); font-size:26px; color:var(--accent); }
+  .why-row h3{ font-family:var(--sans); font-size:17px; font-weight:700; margin-bottom:6px; }
+  .why-row p{ font-size:14.5px; color:var(--ink-soft); }
+
+  /* REVIEWS */
+  .review-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:22px; }
+  @media(max-width:900px){ .review-grid{ grid-template-columns:1fr; } }
+  .review-card{ background:var(--white); border:1px solid var(--line); border-radius:var(--radius); padding:26px; transition:transform .2s ease, box-shadow .2s ease; }
+  .review-card:hover{ transform:translateY(-5px); box-shadow:var(--shadow); }
+  .review-top{ display:flex; align-items:center; gap:12px; margin-bottom:14px; }
+  .review-avatar{ width:40px; height:40px; border-radius:50%; background:var(--accent-soft); color:var(--ink); font-weight:700; font-size:16px; display:flex; align-items:center; justify-content:center; flex:none; }
+  .review-name{ font-size:14.5px; font-weight:700; }
+  .review-meta{ font-size:12px; color:var(--ink-soft); display:flex; align-items:center; gap:6px; }
+  .stars{ color:var(--accent); font-size:13px; letter-spacing:1px; }
+  .review-card p.quote{ font-size:14.5px; color:var(--ink-soft); }
+
+  /* AREAS */
+  #areas{ position:relative; overflow:hidden; }
+  .areas-bg{
+    position:absolute; inset:0; z-index:0;
+    background-image:url('assets/areas-bg-lg.jpg');
+    background-size:cover; background-position:center 40%;
+    opacity:0.14;
+  }
+  #areas .wrap{ position:relative; z-index:1; }
+  .area-chips{ display:flex; flex-wrap:wrap; gap:12px; }
+  .chip{ padding:10px 18px; border:1px solid var(--line); border-radius:999px; font-size:14px; font-weight:500; background:var(--white); transition:transform .2s ease, background .2s ease, border-color .2s ease; }
+  .chip:hover{ transform:translateY(-3px); background:var(--accent-soft); border-color:var(--accent); }
+  .county-note{ margin-top:26px; font-size:14px; color:var(--ink-soft); max-width:60ch; }
+
+  /* CONTACT */
+  .contact-grid{ display:grid; grid-template-columns:1fr 1fr; gap:56px; align-items:start; }
+  @media(max-width:900px){ .contact-grid{ grid-template-columns:1fr; } }
+  .contact-info p{ color:var(--ink-soft); font-size:16px; max-width:44ch; margin-bottom:26px; }
+  .info-line{ display:flex; gap:14px; align-items:flex-start; padding:14px 0; border-top:1px solid var(--line); }
+  .info-line:first-of-type{ border-top:none; }
+  .info-line b{ display:block; font-size:14px; }
+  .info-line span{ font-size:13.5px; color:var(--ink-soft); }
+
+  form{ background:var(--white); border:1px solid var(--line); border-radius:20px; padding:34px; box-shadow:var(--shadow); }
+  .field{ margin-bottom:18px; }
+  .field label{ display:block; font-size:12.5px; font-weight:700; text-transform:uppercase; letter-spacing:.06em; color:var(--ink-soft); margin-bottom:7px; }
+  .field input, .field select, .field textarea{
+    width:100%; padding:13px 14px; border:1px solid var(--line); border-radius:10px;
+    font-family:var(--sans); font-size:14.5px; background:var(--paper); color:var(--ink);
+    transition:border-color .15s ease, box-shadow .15s ease;
+  }
+  .field input:focus, .field select:focus, .field textarea:focus{
+    outline:none; border-color:var(--accent); box-shadow:0 0 0 3px var(--accent-soft);
+  }
+  .row2{ display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+  @media(max-width:520px){ .row2{ grid-template-columns:1fr; } }
+  form .btn{ width:100%; justify-content:center; margin-top:6px; }
+  .form-success{ display:none; text-align:center; padding:30px 10px; }
+  .form-success.show{ display:block; }
+  .form-success .check{ width:54px; height:54px; border-radius:50%; background:var(--accent-soft); color:var(--accent); display:flex; align-items:center; justify-content:center; margin:0 auto 16px; font-size:24px; }
+
+  /* TRUST STRIP */
+  .trust-strip{ background:var(--paper-2); border-top:1px solid var(--line); border-bottom:1px solid var(--line); padding:30px 0; }
+  .trust-strip-inner{ display:flex; flex-wrap:wrap; justify-content:space-between; gap:24px; }
+  .trust-item{ display:flex; align-items:center; gap:12px; flex:1 1 200px; }
+  .trust-item .ti-num{ font-family:var(--serif); font-size:24px; color:var(--accent); font-weight:600; flex:none; }
+  .trust-item .ti-label{ font-size:13px; color:var(--ink-soft); font-weight:600; max-width:18ch; line-height:1.25; }
+
+  /* FAQ */
+  .faq-list{ max-width:760px; }
+  .faq-item{ border-top:1px solid var(--line); padding:22px 0; transition:background .2s ease; }
+  .faq-item:last-child{ border-bottom:1px solid var(--line); }
+  .faq-item summary{ cursor:pointer; list-style:none; display:flex; justify-content:space-between; align-items:center; gap:16px; font-family:var(--serif); font-size:17px; font-weight:600; }
+  .faq-item summary::-webkit-details-marker{ display:none; }
+  .faq-item summary .faq-plus{ flex:none; width:26px; height:26px; border-radius:50%; border:1px solid var(--line); display:flex; align-items:center; justify-content:center; font-size:16px; color:var(--accent); transition:transform .3s cubic-bezier(.16,1,.3,1); }
+  .faq-item[open] summary .faq-plus{ transform:rotate(45deg); }
+  .faq-item p{ margin-top:14px; font-size:14.5px; color:var(--ink-soft); max-width:64ch; }
+
+  /* FINAL CTA */
+  .final-cta{ background:var(--ink); color:#fff; text-align:center; padding:88px 0; position:relative; overflow:hidden; }
+  .final-cta::before{
+    content:''; position:absolute; inset:0; opacity:.5; pointer-events:none;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.05'/%3E%3C/svg%3E");
+  }
+  .final-cta .wrap{ position:relative; }
+  .final-cta h2{ color:#fff; font-size:clamp(1.9rem,3.6vw,2.8rem); margin-bottom:16px; }
+  .final-cta p{ color:#A9B8CC; font-size:16.5px; max-width:52ch; margin:0 auto 30px; }
+  .final-cta .btn-row{ display:flex; gap:14px; justify-content:center; flex-wrap:wrap; }
+
+  footer{ background:var(--ink); color:#8FA3BD; padding:56px 0 30px; }
+  .foot-grid{ display:grid; grid-template-columns:1.4fr 1fr 1fr; gap:40px; margin-bottom:40px; }
+  @media(max-width:760px){ .foot-grid{ grid-template-columns:1fr; } }
+  .foot-grid h4{ color:var(--paper); font-size:13.5px; font-weight:700; text-transform:uppercase; letter-spacing:.06em; margin-bottom:16px; }
+  .foot-grid a{ display:block; text-decoration:none; color:#8FA3BD; font-size:14px; padding:5px 0; }
+  .foot-grid a:hover{ color:var(--accent-soft); }
+  .foot-logo{ font-family:var(--serif); font-size:22px; color:var(--paper); margin-bottom:12px; }
+  .foot-bottom{ border-top:1px solid #223652; padding-top:22px; font-size:12.5px; display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px; }
+</style>
+</head>
+<body>
+
+<header id="siteHeader">
+  <div class="wrap nav">
+    <a href="#top" class="logo"><span class="logo-mark">E</span> Evercoast Cleaning Co.</a>
+    <nav class="links">
+      <a href="#services">Services</a>
+      <a href="#checklist">Checklist</a>
+      <a href="#why">Why Us</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#areas">Areas</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="nav-phone" href="tel:+15615550142">(561) 555-0142</a>
+      <a class="btn btn-primary" href="#contact">Get a Quote</a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section id="top" class="hero">
+    <div class="hero-media">
+      <picture>
+        <source type="image/webp" srcset="assets/hero-sm.webp 1000w, assets/hero-md.webp 1400w, assets/hero.webp 2000w" sizes="100vw">
+        <img src="assets/hero-md.jpg" srcset="assets/hero-sm.jpg 1000w, assets/hero-md.jpg 1400w, assets/hero.jpg 2000w" sizes="100vw" alt="Cleaner in rubber gloves washing a window" loading="eager" fetchpriority="high" width="2000" height="1334">
+      </picture>
+    </div>
+    <div class="hero-scrim"></div>
+    <div class="hero-shape s1"></div>
+    <div class="hero-shape s2"></div>
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow hero-in d1" style="color:var(--accent-soft)">Palm Beach County, FL</span>
+        <h1 class="hero-in d2">Cleaning done <em>properly</em>, by the same crew every time.</h1>
+        <p class="lede hero-in d3">Evercoast handles recurring house cleaning, deep cleans, move-outs, and office janitorial across Palm Beach County — booked with one call, not routed through an out-of-state dispatch line.</p>
+        <div class="hero-actions hero-in d4">
+          <a href="#contact" class="btn btn-accent">Request a free quote</a>
+          <a href="#services" class="btn btn-ghost" style="border-color:rgba(255,255,255,0.5); color:#fff;">See services</a>
+        </div>
+        <div class="trust-row hero-in d5">
+          <span><i class="dot"></i> Licensed &amp; insured</span>
+          <span><i class="dot"></i> Same-week booking</span>
+          <span><i class="dot"></i> Local crew, no subcontracting</span>
+        </div>
+      </div>
+      <div class="hero-card hero-in">
+        <span class="tag">Typical recurring visit</span>
+        <h3>3-bed / 2-bath home</h3>
+        <div class="quote-row"><span>Kitchen &amp; appliances</span><b>Included</b></div>
+        <div class="quote-row"><span>Bathrooms, disinfected</span><b>Included</b></div>
+        <div class="quote-row"><span>Dusting, ceiling to baseboard</span><b>Included</b></div>
+        <div class="quote-row"><span>Floors vacuumed &amp; mopped</span><b>Included</b></div>
+        <p class="price-note">Exact pricing depends on square footage and visit frequency — quoted before we ever book a date.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="trust-strip">
+    <div class="wrap trust-strip-inner">
+      <div class="trust-item reveal reveal-fade" style="transition-delay:0ms"><span class="ti-num">12+</span><span class="ti-label">Years combined crew experience</span></div>
+      <div class="trust-item reveal reveal-fade" style="transition-delay:60ms"><span class="ti-num">4.9&#9733;</span><span class="ti-label">Average client rating</span></div>
+      <div class="trust-item reveal reveal-fade" style="transition-delay:120ms"><span class="ti-num">48h</span><span class="ti-label">Typical response time</span></div>
+      <div class="trust-item reveal reveal-fade" style="transition-delay:180ms"><span class="ti-num">100%</span><span class="ti-label">Satisfaction re-clean guarantee</span></div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="wrap">
+      <div class="head-media">
+        <div class="section-head reveal">
+          <span class="eyebrow">What We Do</span>
+          <h2>Six services, one standard of clean.</h2>
+          <p>Whether it's a weekly reset or a one-time deep pass before a showing, every visit follows the same checklist — nothing skipped because it "wasn't on the list this week."</p>
+        </div>
+        <div class="media-frame reveal reveal-right">
+          <picture>
+            <source type="image/webp" srcset="assets/services-photo.webp">
+            <img src="assets/services-photo.jpg" alt="Two Evercoast cleaners in uniform in a modern office" loading="lazy" width="1100" height="734">
+          </picture>
+        </div>
+      </div>
+      <div class="services-grid">
+        <div class="svc-card reveal" style="transition-delay:0ms">
+          <span class="svc-num">01</span>
+          <h3>Recurring House Cleaning</h3>
+          <p>Weekly, biweekly, or monthly visits — kitchen, bathrooms, bedrooms, and living areas, top to bottom, every time.</p>
+        </div>
+        <div class="svc-card reveal" style="transition-delay:70ms">
+          <span class="svc-num">02</span>
+          <h3>Deep Clean &amp; Move-Out</h3>
+          <p>Baseboards, inside appliances, window tracks, fixtures — the corners a standard visit doesn't reach.</p>
+        </div>
+        <div class="svc-card reveal" style="transition-delay:140ms">
+          <span class="svc-num">03</span>
+          <h3>Office &amp; Commercial</h3>
+          <p>Daily, weekly, or custom janitorial plans built around your business hours, not ours.</p>
+        </div>
+        <div class="svc-card reveal" style="transition-delay:0ms">
+          <span class="svc-num">04</span>
+          <h3>Real Estate Turnover</h3>
+          <p>Fast turnarounds for realtors and property managers between tenants or ahead of a showing.</p>
+        </div>
+        <div class="svc-card reveal" style="transition-delay:70ms">
+          <span class="svc-num">05</span>
+          <h3>Vacation Rental Turns</h3>
+          <p>Guest-ready resets on tight windows, with a standardized checklist for every changeover.</p>
+        </div>
+        <div class="svc-card reveal" style="transition-delay:140ms">
+          <span class="svc-num">06</span>
+          <h3>Post-Construction Clean</h3>
+          <p>Dust and debris removal after renovation or build-out, before final walkthrough.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="checklist" class="band-dark">
+    <div class="wrap checklist-layout">
+      <div class="checklist-intro reveal reveal-left">
+        <span class="eyebrow">Same Checklist, Every Time</span>
+        <h2 style="color:#fff; margin-top:12px; font-size:clamp(1.9rem,3vw,2.6rem);">What "done" actually means here.</h2>
+        <p>Every Evercoast visit closes out against the same list, regardless of which cleaner is on site. Nothing gets marked finished from memory.</p>
+      </div>
+      <div class="checklist-grid">
+        <div class="check-item reveal" style="transition-delay:0ms"><h3>Kitchen</h3><span class="badge">Cleared</span></div>
+        <div class="check-item reveal" style="transition-delay:60ms"><h3>Bathrooms</h3><span class="badge">Cleared</span></div>
+        <div class="check-item reveal" style="transition-delay:120ms"><h3>Bedrooms</h3><span class="badge">Cleared</span></div>
+        <div class="check-item reveal" style="transition-delay:180ms"><h3>Living areas</h3><span class="badge">Cleared</span></div>
+        <div class="check-item reveal" style="transition-delay:240ms"><h3>Floors</h3><span class="badge">Cleared</span></div>
+        <div class="check-item reveal" style="transition-delay:300ms"><h3>Windows &amp; tracks</h3><span class="badge">Cleared</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="why">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Why Evercoast</span>
+        <h2>What actually changes when you switch.</h2>
+      </div>
+      <div class="why-media-grid">
+        <div class="media-frame reveal reveal-left">
+          <picture>
+            <source type="image/webp" srcset="assets/why-photo.webp">
+            <img src="assets/why-photo.jpg" alt="Evercoast cleaner smiling with a supply caddy" loading="lazy" width="1100" height="616">
+          </picture>
+        </div>
+        <div class="why-list">
+          <div class="why-row reveal" style="transition-delay:0ms">
+            <span class="why-idx">01</span>
+            <div><h3>Reschedule without the hassle</h3><p>Move, skip, or add a visit with a text — no cancellation fees, no phone tag with a call center.</p></div>
+          </div>
+          <div class="why-row reveal" style="transition-delay:80ms">
+            <span class="why-idx">02</span>
+            <div><h3>Same assigned crew</h3><p>Your recurring visits go to the same team, not whoever's available that week.</p></div>
+          </div>
+          <div class="why-row reveal" style="transition-delay:160ms">
+            <span class="why-idx">03</span>
+            <div><h3>Pricing fixed before booking</h3><p>You see the number before anything's on the calendar — no line items added after the fact.</p></div>
+          </div>
+          <div class="why-row reveal" style="transition-delay:240ms">
+            <span class="why-idx">04</span>
+            <div><h3>Local ownership, not a franchise</h3><p>Requests get answered by people who actually drive the routes, not a national dispatch queue.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="reviews" class="band-alt">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Client Feedback</span>
+        <h2>Notes from homes and offices across the county.</h2>
+      </div>
+      <div class="review-grid">
+        <div class="review-card reveal" style="transition-delay:0ms">
+          <div class="review-top">
+            <span class="review-avatar">M</span>
+            <div>
+              <div class="review-name">Marissa T.</div>
+              <div class="review-meta"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span> Boca Raton</div>
+            </div>
+          </div>
+          <p class="quote">Same two people every visit, which is the part I actually care about. Kitchen and bathrooms are spotless without me asking.</p>
+        </div>
+        <div class="review-card reveal" style="transition-delay:100ms">
+          <div class="review-top">
+            <span class="review-avatar">D</span>
+            <div>
+              <div class="review-name">Daniel R.</div>
+              <div class="review-meta"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span> Wellington</div>
+            </div>
+          </div>
+          <p class="quote">Used them for a move-out clean. Landlord didn't have a single line item on the deposit deduction — that alone paid for it.</p>
+        </div>
+        <div class="review-card reveal" style="transition-delay:200ms">
+          <div class="review-top">
+            <span class="review-avatar">K</span>
+            <div>
+              <div class="review-name">Keisha B.</div>
+              <div class="review-meta"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span> West Palm Beach</div>
+            </div>
+          </div>
+          <p class="quote">Office cleaning three nights a week, never had to follow up on a missed spot. Billing has also never been a surprise.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="areas" class="band-alt">
+    <div class="areas-bg"></div>
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Coverage</span>
+        <h2>All of Palm Beach County.</h2>
+        <p>Based centrally in the county and out on routes daily — not a call center dispatching from out of state.</p>
+      </div>
+      <div class="area-chips">
+        <span class="chip reveal reveal-fade" style="transition-delay:0ms">West Palm Beach</span>
+        <span class="chip reveal reveal-fade" style="transition-delay:30ms">Boca Raton</span>
+        <span class="chip reveal reveal-fade" style="transition-delay:60ms">Delray Beach</span>
+        <span class="chip reveal reveal-fade" style="transition-delay:90ms">Boynton Beach</span>
+        <span class="chip reveal reveal-fade" style="transition-delay:120ms">Jupiter</span>
+        <span class="chip reveal reveal-fade" style="transition-delay:150ms">Wellington</span>
+        <span class="chip reveal reveal-fade" style="transition-delay:180ms">Lake Worth Beach</span>
+        <span class="chip reveal reveal-fade" style="transition-delay:210ms">Royal Palm Beach</span>
+        <span class="chip reveal reveal-fade" style="transition-delay:240ms">Palm Beach Gardens</span>
+        <span class="chip reveal reveal-fade" style="transition-delay:270ms">Greenacres</span>
+      </div>
+      <p class="county-note">Don't see your neighborhood listed? We cover most of Palm Beach County — send your address with the quote request and we'll confirm coverage the same day.</p>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Questions</span>
+        <h2>Before you book, the usual questions.</h2>
+      </div>
+      <div class="faq-list">
+        <details class="faq-item reveal" style="transition-delay:0ms">
+          <summary>Do I need to be home for the cleaning?<span class="faq-plus">+</span></summary>
+          <p>No. Most clients leave entry instructions — a lockbox, code, or key — and go about their day. You'll get a text when the crew arrives and again when they're done.</p>
+        </details>
+        <details class="faq-item reveal" style="transition-delay:60ms">
+          <summary>What's included in a standard visit?<span class="faq-plus">+</span></summary>
+          <p>Kitchen, bathrooms, bedrooms, and living areas — dusting, vacuuming, mopping, and disinfecting, every visit. See the full checklist above for the room-by-room breakdown.</p>
+        </details>
+        <details class="faq-item reveal" style="transition-delay:120ms">
+          <summary>Can I skip or reschedule a visit?<span class="faq-plus">+</span></summary>
+          <p>Yes, anytime, with a text. No cancellation fee as long as we get at least 24 hours' notice.</p>
+        </details>
+        <details class="faq-item reveal" style="transition-delay:180ms">
+          <summary>Are cleaners background-checked?<span class="faq-plus">+</span></summary>
+          <p>Every cleaner is background-checked before their first visit and covered under our liability insurance while working on your property.</p>
+        </details>
+        <details class="faq-item reveal" style="transition-delay:240ms">
+          <summary>Do you bring your own supplies?<span class="faq-plus">+</span></summary>
+          <p>Yes — standard supplies and equipment are included in every visit. If you'd rather we use products you provide, just let us know when you book.</p>
+        </details>
+        <details class="faq-item reveal" style="transition-delay:300ms">
+          <summary>What if I'm not happy with a visit?<span class="faq-plus">+</span></summary>
+          <p>Tell us within 24 hours and we'll send the crew back to fix it — no charge, no argument.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="final-cta">
+    <div class="wrap">
+      <span class="eyebrow" style="color:var(--accent-soft)">Get Started</span>
+      <h2>Ready to get your first visit on the calendar?</h2>
+      <p>Tell us about the space and we'll follow up with pricing the same day — no obligation, no pushy follow-up calls.</p>
+      <div class="btn-row">
+        <a href="#contact" class="btn btn-accent">Request a free quote</a>
+        <a href="tel:+15615550142" class="btn btn-ghost" style="border-color:rgba(255,255,255,0.5); color:#fff;">(561) 555-0142</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap contact-grid">
+      <div class="contact-info reveal reveal-left">
+        <span class="eyebrow">Get In Touch</span>
+        <h2 style="margin:12px 0 18px;">Request a quote.</h2>
+        <p>Tell us about the space and we'll follow up with pricing and the next available appointment. Requests outside business hours get a reply the next day.</p>
+        <div class="media-frame contact-photo-frame">
+          <picture>
+            <source type="image/webp" srcset="assets/contact-photo.webp">
+            <img src="assets/contact-photo.jpg" alt="Evercoast cleaner ready with supplies" loading="lazy" width="1100" height="776">
+          </picture>
+        </div>
+        <div class="info-line"><div><b>Phone</b><span>(561) 555-0142</span></div></div>
+        <div class="info-line"><div><b>Email</b><span>hello@evercoastcleaning.com</span></div></div>
+        <div class="info-line"><div><b>Hours</b><span>Mon–Sat, 7am–7pm</span></div></div>
+      </div>
+
+      <form id="quoteForm" class="reveal reveal-right">
+        <div id="formFields">
+          <div class="row2">
+            <div class="field"><label for="name">Full name</label><input id="name" type="text" required></div>
+            <div class="field"><label for="phone">Phone</label><input id="phone" type="tel" required></div>
+          </div>
+          <div class="field"><label for="email">Email</label><input id="email" type="email" required></div>
+          <div class="row2">
+            <div class="field">
+              <label for="city">City</label>
+              <select id="city">
+                <option>West Palm Beach</option>
+                <option>Boca Raton</option>
+                <option>Delray Beach</option>
+                <option>Boynton Beach</option>
+                <option>Jupiter</option>
+                <option>Wellington</option>
+                <option>Lake Worth Beach</option>
+                <option>Royal Palm Beach</option>
+                <option>Palm Beach Gardens</option>
+                <option>Greenacres</option>
+                <option>Other / not sure</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="service">Service</label>
+              <select id="service">
+                <option>Recurring House Cleaning</option>
+                <option>Deep Clean / Move-Out</option>
+                <option>Office &amp; Commercial</option>
+                <option>Real Estate Turnover</option>
+                <option>Vacation Rental Turns</option>
+                <option>Post-Construction Clean</option>
+              </select>
+            </div>
+          </div>
+          <div class="field"><label for="notes">Anything we should know?</label><textarea id="notes" rows="3"></textarea></div>
+          <button type="submit" class="btn btn-primary">Request my quote</button>
+        </div>
+        <div class="form-success" id="formSuccess">
+          <div class="check">&#10003;</div>
+          <h3 style="font-size:19px; margin-bottom:8px;">Request received</h3>
+          <p style="font-size:14px; color:var(--ink-soft);">This is a portfolio demo, so nothing was actually sent — but this is exactly how the confirmation state would look on a live build.</p>
+        </div>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-logo">Evercoast Cleaning Co.</div>
+        <p style="font-size:14px; max-width:38ch; color:#8FA3BD;">Residential and commercial cleaning across Palm Beach County, FL. Licensed, insured, and locally staffed.</p>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <a href="#services">Recurring House Cleaning</a>
+        <a href="#services">Deep Clean / Move-Out</a>
+        <a href="#services">Office &amp; Commercial</a>
+        <a href="#services">Real Estate Turnover</a>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <a href="#checklist">The Checklist</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#areas">Areas We Serve</a>
+        <a href="#contact">Get a Quote</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>&copy; 2026 Evercoast Cleaning Co. — demo site for portfolio purposes.</span>
+      <span>(561) 555-0142 &middot; hello@evercoastcleaning.com</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('quoteForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    document.getElementById('formFields').style.display = 'none';
+    document.getElementById('formSuccess').classList.add('show');
+  });
+
+  var header = document.getElementById('siteHeader');
+  function onScroll(){
+    if (window.scrollY > 40) header.classList.add('scrolled');
+    else header.classList.remove('scrolled');
+  }
+  window.addEventListener('scroll', onScroll);
+  onScroll();
+
+  var revealEls = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15, rootMargin: '0px 0px -60px 0px' });
+    revealEls.forEach(function(el){ io.observe(el); });
+  } else {
+    revealEls.forEach(function(el){ el.classList.add('in'); });
+  }
+</script>
+
+</body>
+</html>

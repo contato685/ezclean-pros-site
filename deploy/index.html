@@ -1,0 +1,2906 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="canonical" href="https://ezcleaning.services/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="House Cleaning Services in San Diego, CA | EZClean Pros">
+<meta property="og:description" content="Reliable house cleaning services in San Diego. Enjoy a cleaner home with trusted professionals, consistent service, detailed cleaning and easy scheduling. Get your free quote today.">
+<meta property="og:url" content="https://ezcleaning.services/">
+<meta property="og:image" content="https://ezcleaning.services/assets/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<title>House Cleaning Services in San Diego, CA | EZClean Pros</title>
+<meta name="description" content="Reliable house cleaning services in San Diego. Enjoy a cleaner home with trusted professionals, consistent service, detailed cleaning and easy scheduling. Get your free quote today.">
+<style>
+  :root{
+    --navy:#0E2A63;
+    --navy-deep:#081B45;
+    --sky:#EAF1FB;
+    --sky-soft:#F6F9FE;
+    --slate:#55627A;
+    --gold:#F5A623;
+    --leaf:#3FAE64;
+    --azure:#2E70B1;
+    --surface:#FFFFFF;
+    --bg:#FFFFFF;
+    --card-border:rgba(14,42,99,0.08);
+    --shadow-color:rgba(14,42,99,0.16);
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color-scheme:light;
+    font-family:'Hanken Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    color:var(--navy);
+  }
+
+  .hero{
+    position:relative;
+    overflow:hidden;
+    padding:150px 6vw 190px;
+    background:var(--navy);
+    min-height:640px;
+    display:flex;
+    align-items:center;
+  }
+
+  .hero-media{
+    position:absolute;
+    inset:0;
+    z-index:0;
+  }
+  .hero-media img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:78% 22%;
+    display:block;
+  }
+  .hero-overlay{
+    position:absolute;
+    inset:0;
+    background:linear-gradient(100deg, rgba(6,17,42,0.63) 0%, rgba(6,17,42,0.52) 34%, rgba(6,17,42,0.27) 64%, rgba(6,17,42,0.11) 100%);
+  }
+
+  .hero-inner{
+    position:relative;
+    z-index:1;
+    max-width:1240px;
+    width:100%;
+    margin:0 auto;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:40px;
+    flex-wrap:wrap;
+  }
+  .hero-content{
+    max-width:560px;
+  }
+
+  .eyebrow{
+    display:inline-flex;
+    align-items:center;
+    gap:9px;
+    background:var(--sky);
+    color:var(--navy);
+    font-size:12.5px;
+    font-weight:700;
+    letter-spacing:0.09em;
+    padding:9px 16px 9px 13px;
+    border-radius:999px;
+    margin:0 0 16px;
+  }
+  .eyebrow::before{
+    content:"";
+    width:6px;
+    height:6px;
+    border-radius:50%;
+    background:var(--azure);
+    flex:0 0 auto;
+  }
+
+  h1{
+    font-size:clamp(2.3rem, 1.6rem + 2.4vw, 3.4rem);
+    line-height:1.08;
+    letter-spacing:-0.02em;
+    font-weight:700;
+    margin:0 0 16px;
+    text-wrap:balance;
+    color:#fff;
+  }
+
+  .lede{
+    font-size:16.5px;
+    line-height:1.6;
+    color:rgba(255,255,255,0.86);
+    max-width:46ch;
+    margin:0 0 26px;
+  }
+
+  .cta-row{
+    display:flex;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:22px;
+    margin-bottom:22px;
+  }
+
+  .cta{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    padding:16px 30px;
+    border-radius:999px;
+    background:linear-gradient(97deg, var(--leaf) 0%, var(--azure) 100%);
+    color:#fff;
+    font-family:inherit;
+    font-size:14.5px;
+    font-weight:700;
+    letter-spacing:0.03em;
+    text-decoration:none;
+    box-shadow:0 14px 28px -8px var(--shadow-color);
+    border:none;
+    cursor:pointer;
+    transition:transform .18s cubic-bezier(.16,1,.3,1), box-shadow .18s cubic-bezier(.16,1,.3,1);
+  }
+  .cta:hover{
+    transform:translateY(-2px);
+    box-shadow:0 18px 34px -8px var(--shadow-color);
+  }
+  .cta:focus-visible{
+    outline:2px solid var(--azure);
+    outline-offset:3px;
+  }
+  .cta svg{ width:16px; height:16px; }
+
+  .cta-call{
+    display:inline-flex; align-items:center; gap:10px;
+    padding:15px 26px; border-radius:999px;
+    background:rgba(255,255,255,0.14); color:#fff;
+    font-family:inherit; font-size:14.5px; font-weight:700; letter-spacing:0.03em;
+    text-decoration:none; white-space:nowrap; cursor:pointer;
+    border:1.5px solid rgba(255,255,255,0.55);
+    backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px);
+    transition:transform .18s cubic-bezier(.16,1,.3,1), background-color .18s ease, border-color .18s ease;
+  }
+  .cta-call svg{ width:17px; height:17px; flex:0 0 auto; }
+  .cta-call:hover{
+    transform:translateY(-2px);
+    background:rgba(255,255,255,0.24);
+    border-color:#fff;
+  }
+  .cta-call:active{ transform:translateY(0); }
+  .cta-call:focus-visible{
+    outline:2px solid #fff;
+    outline-offset:3px;
+  }
+  @media (max-width:520px){
+    .cta-row{ gap:12px; }
+    .cta, .cta-call{ width:100%; justify-content:center; }
+  }
+
+  .stars-line{
+    display:flex;
+    align-items:center;
+    gap:9px;
+    font-size:14.5px;
+    font-weight:600;
+    color:#fff;
+  }
+  .stars-line .stars{
+    color:var(--gold);
+    letter-spacing:2px;
+    font-size:15px;
+  }
+  .stars-line .google-icon{
+    width:16px;
+    height:16px;
+    flex:0 0 auto;
+  }
+
+  .hero-seal-mobile{ display:none; }
+
+  .hero-seal{
+    position:absolute;
+    z-index:2;
+    left:60.5%;
+    top:49.5%;
+    width:clamp(142px, 11vw, 168px);
+    height:auto;
+    display:block;
+    transform:translate(-50%, -50%) rotate(-4deg);
+    filter:drop-shadow(0 5px 8px rgba(0,0,0,0.38));
+    pointer-events:none;
+    user-select:none;
+  }
+
+  @media (min-width: 941px) and (max-width: 1199px){
+    .hero-seal{ left:55%; }
+  }
+
+  .site-header{
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    z-index:2;
+    max-width:1240px;
+    margin:0 auto;
+    padding:26px 6vw 0;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:24px;
+    background:transparent;
+  }
+  .site-logo{
+    height:64px;
+    width:auto;
+    border-radius:12px;
+    display:block;
+    flex:0 0 auto;
+  }
+  .site-nav{
+    display:flex;
+    align-items:center;
+    gap:30px;
+  }
+  .site-nav a{
+    font-size:14.5px;
+    font-weight:600;
+    color:#fff;
+    text-decoration:none;
+    opacity:0.9;
+    transition:opacity .15s ease;
+  }
+  .site-nav a:hover{ opacity:1; }
+  .site-nav a:focus-visible{
+    outline:2px solid #fff;
+    outline-offset:3px;
+    border-radius:4px;
+  }
+  .nav-cta{
+    display:inline-flex;
+    align-items:center;
+    background:#fff;
+    color:var(--navy) !important;
+    font-size:13.5px;
+    font-weight:800 !important;
+    letter-spacing:0.03em;
+    padding:11px 22px;
+    border-radius:999px;
+    opacity:1 !important;
+    box-shadow:0 12px 24px -10px rgba(0,0,0,0.4);
+    transition:transform .15s ease, box-shadow .15s ease;
+  }
+  .nav-cta:hover{
+    transform:translateY(-1px);
+    box-shadow:0 16px 28px -10px rgba(0,0,0,0.45);
+  }
+  .nav-toggle{
+    display:none;
+    width:40px;
+    height:40px;
+    align-items:center;
+    justify-content:center;
+    background:rgba(255,255,255,0.14);
+    border:none;
+    border-radius:10px;
+    color:#fff;
+    cursor:pointer;
+    flex:0 0 auto;
+  }
+  .nav-toggle svg{ width:20px; height:20px; }
+  .nav-toggle:focus-visible{
+    outline:2px solid #fff;
+    outline-offset:2px;
+  }
+
+  @media (max-width: 940px){
+    .hero{ padding-top:300px; padding-left:6vw; padding-right:6vw; padding-bottom:48px; min-height:auto; }
+    .hero-inner{ flex-direction:column; align-items:flex-start; gap:28px; }
+    .hero-seal{ display:none; }
+    .hero-seal-mobile{
+      display:block;
+      width:clamp(96px, 24vw, 118px);
+      height:auto;
+      margin:4px 0 2px;
+      transform:rotate(-4deg);
+      filter:drop-shadow(0 5px 8px rgba(0,0,0,0.38));
+      pointer-events:none;
+      user-select:none;
+    }
+    .lede{ max-width:60ch; }
+    .site-header{ padding:18px 5vw 0; }
+    .site-logo{ height:48px; }
+    .site-nav{
+      display:none;
+      position:absolute;
+      top:100%;
+      left:0;
+      right:0;
+      flex-direction:column;
+      align-items:flex-start;
+      gap:2px;
+      background:var(--navy);
+      padding:12px 6vw 20px;
+      box-shadow:0 20px 40px -10px rgba(0,0,0,0.4);
+    }
+    .site-nav.is-open{ display:flex; }
+    .site-nav a{
+      width:100%;
+      padding:12px 0;
+      opacity:1;
+    }
+    .nav-cta{
+      margin-top:8px;
+      width:100%;
+      justify-content:center;
+    }
+    .nav-toggle{ display:flex; }
+  }
+
+  /* --- Quote bridge form --- */
+  .quote-anchor{
+    position:relative;
+    height:0;
+    z-index:6;
+  }
+  .quote-card{
+    position:absolute;
+    top:0;
+    left:50%;
+    transform:translate(-50%, -50%);
+    width:min(1180px, 88vw);
+    background:var(--surface);
+    border-radius:24px;
+    border:1px solid var(--card-border);
+    box-shadow:0 30px 70px -20px var(--shadow-color), 0 2px 0 var(--card-border);
+    padding:40px 48px;
+    display:block;
+  }
+  .quote-head{
+    text-align:center;
+    margin-bottom:28px;
+  }
+  .quote-head h2{
+    margin:0 0 8px;
+    font-size:clamp(1.5rem, 1.2rem + 1vw, 1.9rem);
+    font-weight:700;
+    letter-spacing:-0.01em;
+    color:var(--navy);
+  }
+  .quote-head p{
+    margin:0 auto;
+    max-width:52ch;
+    font-size:15.5px;
+    line-height:1.55;
+    color:var(--slate);
+  }
+  .quote-row{
+    display:grid;
+    grid-template-columns:1.1fr 1fr 1.2fr auto;
+    gap:16px;
+    align-items:start;
+  }
+  .field{
+    display:flex;
+    flex-direction:column;
+    gap:6px;
+  }
+  .field label{
+    font-size:12.5px;
+    font-weight:700;
+    letter-spacing:0.03em;
+    color:var(--slate);
+  }
+  .field input{
+    font-family:inherit;
+    font-size:15px;
+    color:var(--navy);
+    background:var(--sky-soft);
+    border:1.5px solid var(--card-border);
+    border-radius:12px;
+    padding:14px 16px;
+    outline:none;
+    transition:border-color .15s ease, box-shadow .15s ease;
+  }
+  .field input::placeholder{ color:#93A0B8; }
+  .field input:focus{
+    border-color:var(--azure);
+    box-shadow:0 0 0 4px rgba(46,112,177,0.14);
+    background:var(--surface);
+  }
+  .field.has-error input{
+    border-color:#E0523F;
+    box-shadow:0 0 0 4px rgba(224,82,63,0.12);
+  }
+  .field-error{
+    display:none;
+    font-size:12.5px;
+    font-weight:600;
+    color:#E0523F;
+  }
+  .field.has-error .field-error{ display:block; }
+
+  .quote-submit{
+    position:relative;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:9px;
+    height:50px;
+    padding:0 26px;
+    margin-top:23px;
+    border:none;
+    border-radius:12px;
+    background:linear-gradient(97deg, var(--leaf) 0%, var(--azure) 100%);
+    color:#fff;
+    font-family:inherit;
+    font-size:13.5px;
+    font-weight:700;
+    letter-spacing:0.03em;
+    white-space:nowrap;
+    cursor:pointer;
+    box-shadow:0 14px 26px -10px var(--shadow-color);
+    transition:transform .18s cubic-bezier(.16,1,.3,1), box-shadow .18s cubic-bezier(.16,1,.3,1), opacity .15s ease;
+  }
+  .quote-submit:hover{
+    transform:translateY(-2px);
+    box-shadow:0 18px 32px -10px var(--shadow-color);
+  }
+  .quote-submit:focus-visible{
+    outline:2px solid var(--azure);
+    outline-offset:3px;
+  }
+  .quote-submit:disabled{ cursor:default; }
+
+  .btn-spinner{
+    display:none;
+    width:15px;
+    height:15px;
+    border-radius:50%;
+    border:2px solid rgba(255,255,255,0.5);
+    border-top-color:#fff;
+    animation:spin .7s linear infinite;
+  }
+  .is-loading .btn-label{ opacity:0.55; }
+  .is-loading .btn-spinner{ display:inline-block; }
+  @keyframes spin{ to{ transform:rotate(360deg); } }
+
+  .quote-success{
+    text-align:center;
+    padding:22px 24px;
+  }
+  .success-icon{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    width:46px;
+    height:46px;
+    border-radius:50%;
+    background:var(--leaf);
+    margin-bottom:16px;
+  }
+  .success-icon svg{ width:22px; height:22px; }
+  .quote-success h2{
+    margin:0 0 8px;
+    font-size:1.5rem;
+    font-weight:700;
+    color:var(--navy);
+  }
+  .quote-success p{
+    margin:0 auto;
+    max-width:48ch;
+    color:var(--slate);
+    font-size:15.5px;
+    line-height:1.55;
+  }
+
+  .next-section{
+    background:var(--sky-soft);
+    padding:190px 6vw 110px;
+  }
+  .next-section-inner{
+    max-width:1180px;
+    margin:0 auto;
+    text-align:center;
+  }
+  .next-section h2{
+    margin:0 auto 16px;
+    font-size:clamp(1.9rem, 1.5rem + 1.7vw, 2.6rem);
+    font-weight:700;
+    letter-spacing:-0.015em;
+    text-wrap:balance;
+    color:var(--navy);
+  }
+  .value-sub{
+    margin:0 auto 56px;
+    max-width:58ch;
+    font-size:16.5px;
+    line-height:1.6;
+    color:var(--slate);
+  }
+  .value-grid{
+    display:grid;
+    grid-template-columns:repeat(3, minmax(0,1fr));
+    gap:24px;
+    text-align:left;
+  }
+  .value-card{
+    background:var(--surface);
+    border-radius:16px;
+    border:1px solid var(--card-border);
+    border-left:4px solid var(--accent, var(--azure));
+    padding:28px 26px;
+    box-shadow:0 16px 32px -18px var(--shadow-color);
+  }
+  .value-card h3{
+    margin:0 0 10px;
+    font-size:18px;
+    line-height:1.3;
+    font-weight:700;
+    color:var(--navy);
+  }
+  .value-card p{
+    margin:0;
+    font-size:15px;
+    line-height:1.6;
+    color:var(--slate);
+  }
+
+  @media (max-width: 940px){
+    .quote-card{ width:92vw; padding:30px 22px; border-radius:20px; }
+    .quote-row{ grid-template-columns:1fr; gap:14px; }
+    .quote-submit{ width:100%; margin-top:6px; }
+    .hero{ padding-bottom:300px; }
+    .next-section{ padding-top:250px; }
+    .value-sub{ margin-bottom:40px; }
+    .value-grid{ grid-template-columns:1fr; gap:16px; }
+  }
+
+  /* --- Services --- */
+  .services-section{
+    background:var(--bg);
+    padding:110px 6vw;
+  }
+  .services-inner{
+    max-width:1180px;
+    margin:0 auto;
+  }
+  .services-head{
+    text-align:center;
+    max-width:640px;
+    margin:0 auto 56px;
+  }
+  .eyebrow-label{
+    display:block;
+    font-size:12.5px;
+    font-weight:700;
+    letter-spacing:0.09em;
+    color:var(--azure);
+    margin-bottom:12px;
+  }
+  .services-head h2{
+    margin:0 0 14px;
+    font-size:clamp(1.9rem, 1.5rem + 1.7vw, 2.6rem);
+    font-weight:700;
+    letter-spacing:-0.015em;
+    text-wrap:balance;
+    color:var(--navy);
+  }
+  .services-sub{
+    margin:0;
+    font-size:16.5px;
+    line-height:1.6;
+    color:var(--slate);
+  }
+  .services-grid{
+    display:grid;
+    grid-template-columns:repeat(3, minmax(0,1fr));
+    gap:24px;
+  }
+  .service-card{
+    background:var(--surface);
+    border:1px solid var(--card-border);
+    border-radius:20px;
+    padding:32px 30px;
+    box-shadow:0 20px 44px -24px var(--shadow-color);
+  }
+  @media (min-width: 941px) and (max-width: 1180px){
+    .services-grid{ grid-template-columns:repeat(2, minmax(0,1fr)); }
+  }
+  @media (max-width: 940px){
+    .services-grid{ grid-template-columns:1fr; gap:18px; }
+    .service-card{ padding:28px 24px; }
+  }
+  .service-title-row{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    margin-bottom:16px;
+    flex-wrap:wrap;
+  }
+  .service-number{
+    font-size:1.9rem;
+    font-weight:800;
+    letter-spacing:-0.02em;
+    color:var(--leaf);
+  }
+  .service-rule{
+    width:26px;
+    height:2px;
+    background:var(--card-border);
+    flex:0 0 auto;
+  }
+  .service-title-row h3{
+    margin:0;
+    font-size:19px;
+    font-weight:700;
+    line-height:1.3;
+    color:var(--navy);
+  }
+  .service-card .desc{
+    margin:0 0 10px;
+    font-size:15px;
+    line-height:1.6;
+    color:var(--slate);
+  }
+  .service-card .note{
+    margin:0 0 10px;
+    font-size:15px;
+    line-height:1.6;
+    color:var(--slate);
+  }
+  .service-card .desc:last-of-type,
+  .service-card .note:last-of-type{
+    margin-bottom:18px;
+  }
+  .learn-more{
+    display:inline-flex;
+    align-items:center;
+    gap:7px;
+    font-size:14.5px;
+    font-weight:700;
+    color:var(--navy);
+    text-decoration:none;
+  }
+  .learn-more span{
+    transition:transform .15s cubic-bezier(.16,1,.3,1);
+  }
+  .learn-more:hover span{
+    transform:translateX(3px);
+  }
+  .learn-more:focus-visible{
+    outline:2px solid var(--azure);
+    outline-offset:3px;
+    border-radius:4px;
+  }
+
+  /* --- How It Works --- */
+  .hiw-section{
+    background:var(--sky-soft);
+    padding:110px 6vw 120px;
+  }
+  .hiw-inner{
+    max-width:1080px;
+    margin:0 auto;
+  }
+  .hiw-head{
+    text-align:center;
+    max-width:640px;
+    margin:0 auto 76px;
+  }
+  .eyebrow-label.center{ text-align:center; }
+  .hiw-head h2{
+    margin:0 0 14px;
+    font-size:clamp(1.9rem, 1.5rem + 1.7vw, 2.6rem);
+    font-weight:700;
+    letter-spacing:-0.015em;
+    text-wrap:balance;
+    color:var(--navy);
+  }
+  .hiw-sub{
+    margin:0;
+    font-size:16.5px;
+    line-height:1.6;
+    color:var(--slate);
+  }
+
+  .hiw-steps{
+    position:relative;
+    display:grid;
+    grid-template-columns:repeat(3, minmax(0,1fr));
+    gap:48px;
+    margin-bottom:64px;
+  }
+  .hiw-line{
+    position:absolute;
+    top:32px;
+    left:16.6667%;
+    right:16.6667%;
+    height:1px;
+    background:var(--card-border);
+    z-index:0;
+  }
+  .hiw-step{
+    position:relative;
+    z-index:1;
+    text-align:center;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+  }
+  .hiw-icon{
+    width:64px;
+    height:64px;
+    border-radius:50%;
+    background:var(--surface);
+    border:1px solid var(--card-border);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:var(--azure);
+    box-shadow:0 12px 24px -14px var(--shadow-color);
+    margin-bottom:22px;
+  }
+  .hiw-icon svg{ width:26px; height:26px; }
+  .hiw-number{
+    font-size:2.4rem;
+    font-weight:800;
+    letter-spacing:-0.02em;
+    line-height:1;
+    color:var(--leaf);
+    margin-bottom:10px;
+  }
+  .hiw-step h3{
+    margin:0 0 8px;
+    font-size:18.5px;
+    font-weight:700;
+    color:var(--navy);
+  }
+  .hiw-step p{
+    margin:0;
+    max-width:30ch;
+    font-size:15px;
+    line-height:1.6;
+    color:var(--slate);
+  }
+
+  .hiw-cta{
+    display:flex;
+    justify-content:center;
+  }
+
+  .reveal{
+    opacity:0;
+    transform:translateY(18px);
+    transition:opacity .6s cubic-bezier(.16,1,.3,1), transform .6s cubic-bezier(.16,1,.3,1);
+  }
+  .reveal.is-visible{
+    opacity:1;
+    transform:translateY(0);
+  }
+  .hiw-steps .hiw-step:nth-child(2){ transition-delay:.1s; }
+  .hiw-steps .hiw-step:nth-child(3){ transition-delay:.2s; }
+
+  @media (prefers-reduced-motion: reduce){
+    .reveal{
+      opacity:1;
+      transform:none;
+      transition:none;
+    }
+  }
+
+  @media (max-width: 940px){
+    .hiw-section{ padding:88px 6vw 96px; }
+    .hiw-head{ margin-bottom:56px; }
+    .hiw-steps{ grid-template-columns:1fr; gap:52px; margin-bottom:52px; }
+    .hiw-line{ display:none; }
+  }
+
+  /* --- Cleaning process / checklist --- */
+  .process-section{
+    background:var(--navy);
+    padding:110px 6vw 96px;
+  }
+  .process-inner{
+    max-width:1180px;
+    margin:0 auto;
+  }
+  .process-head{
+    display:grid;
+    grid-template-columns:minmax(0,380px) minmax(0,1fr);
+    gap:64px;
+    align-items:center;
+    margin-bottom:72px;
+  }
+  .process-photo{
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 30px 60px -20px rgba(0,0,0,0.45);
+  }
+  .process-photo img{
+    width:100%;
+    height:100%;
+    display:block;
+    object-fit:cover;
+    aspect-ratio:4/5;
+  }
+  .eyebrow-label.light{
+    color:#8FB7E8;
+  }
+  .process-copy h2{
+    margin:0 0 16px;
+    font-size:clamp(1.9rem, 1.4rem + 2vw, 2.7rem);
+    font-weight:700;
+    letter-spacing:-0.015em;
+    line-height:1.12;
+    text-wrap:balance;
+    color:#fff;
+  }
+  .process-copy p{
+    margin:0;
+    max-width:46ch;
+    font-size:16.5px;
+    line-height:1.6;
+    color:rgba(255,255,255,0.78);
+  }
+
+  .checklist-grid{
+    display:grid;
+    grid-template-columns:repeat(2, minmax(0,1fr));
+    gap:24px;
+  }
+  .checklist-card{
+    background:#10336D;
+    border-radius:18px;
+    padding:30px 32px;
+    box-shadow:0 20px 44px -22px rgba(0,0,0,0.45);
+  }
+  .checklist-card h3{
+    margin:0 0 18px;
+    font-size:19px;
+    font-weight:700;
+    color:#fff;
+  }
+  .checklist-card ul{
+    list-style:none;
+    margin:0;
+    padding:0;
+    display:flex;
+    flex-direction:column;
+    gap:13px;
+  }
+  .checklist-card li{
+    display:flex;
+    align-items:flex-start;
+    gap:11px;
+    font-size:14.5px;
+    line-height:1.5;
+    color:#9CACC9;
+  }
+  .check-dot{
+    flex:0 0 auto;
+    width:18px;
+    height:18px;
+    margin-top:2px;
+    border-radius:50%;
+    background:var(--leaf);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .check-dot svg{ width:9px; height:9px; }
+
+  @media (max-width: 940px){
+    .process-section{ padding:88px 6vw 80px; }
+    .process-head{ grid-template-columns:1fr; gap:32px; margin-bottom:52px; text-align:left; }
+    .process-photo{ max-width:320px; margin:0 auto; }
+    .checklist-grid{ grid-template-columns:1fr; gap:18px; }
+    .checklist-card{ padding:26px 24px; }
+  }
+
+  /* --- Before & After --- */
+  .ba-section{
+    background:var(--bg);
+    padding:110px 6vw 120px;
+  }
+  .ba-inner{
+    max-width:1080px;
+    margin:0 auto;
+  }
+  .ba-head{
+    text-align:center;
+    max-width:56ch;
+    margin:0 auto 56px;
+  }
+  .ba-head h2{
+    margin:0 0 18px;
+    font-size:clamp(1.9rem, 1.5rem + 1.7vw, 2.6rem);
+    font-weight:700;
+    letter-spacing:-0.015em;
+    text-wrap:balance;
+    color:var(--navy);
+  }
+  .ba-lead{
+    margin:0 0 12px;
+    font-size:18px;
+    font-weight:700;
+    color:var(--navy);
+  }
+  .ba-copy{
+    margin:0;
+    font-size:16px;
+    line-height:1.6;
+    color:var(--slate);
+  }
+
+  .ba-carousel{
+    max-width:1080px;
+    margin:0 auto;
+  }
+  .ba-viewport{
+    overflow:hidden;
+  }
+  .ba-track{
+    display:flex;
+    gap:24px;
+    transition:transform .55s cubic-bezier(.16,1,.3,1);
+    will-change:transform;
+  }
+  .ba-item{
+    flex:0 0 auto;
+  }
+  .ba-frame{
+    position:relative;
+    width:100%;
+    aspect-ratio:3/4;
+    border-radius:22px;
+    overflow:hidden;
+    background:var(--sky-soft);
+    box-shadow:0 30px 60px -20px var(--shadow-color);
+    touch-action:none;
+    user-select:none;
+    cursor:ew-resize;
+  }
+  .ba-frame img{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+    pointer-events:none;
+  }
+  .ba-img-after{ z-index:1; }
+  .ba-before-wrap{
+    position:absolute;
+    inset:0;
+    z-index:2;
+    clip-path:inset(0 calc(100% - var(--pos, 50%)) 0 0);
+  }
+  .ba-tag{
+    position:absolute;
+    top:16px;
+    z-index:4;
+    font-size:11.5px;
+    font-weight:700;
+    letter-spacing:0.06em;
+    padding:6px 12px;
+    border-radius:999px;
+    background:rgba(14,42,99,0.72);
+    color:#fff;
+    pointer-events:none;
+  }
+  .ba-tag-before{ left:16px; }
+  .ba-tag-after{ right:16px; }
+
+  .ba-handle{
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:var(--pos, 50%);
+    transform:translateX(-50%);
+    z-index:3;
+    width:0;
+    pointer-events:none;
+  }
+  .ba-handle::before{
+    content:"";
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:50%;
+    width:3px;
+    transform:translateX(-50%);
+    background:#fff;
+    box-shadow:0 0 0 1px rgba(14,42,99,0.15);
+  }
+  .ba-handle-grip{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:42px;
+    height:42px;
+    border-radius:50%;
+    background:#fff;
+    box-shadow:0 10px 24px rgba(14,42,99,0.28);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:var(--navy);
+  }
+  .ba-handle-grip svg{ width:18px; height:18px; }
+
+  .ba-controls{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:22px;
+    margin-top:26px;
+  }
+  .ba-nav-btn{
+    width:44px;
+    height:44px;
+    border-radius:50%;
+    border:1px solid var(--card-border);
+    background:var(--surface);
+    color:var(--navy);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    cursor:pointer;
+    transition:background .15s ease, transform .15s ease;
+  }
+  .ba-nav-btn:hover{
+    background:var(--sky);
+    transform:translateY(-1px);
+  }
+  .ba-nav-btn:focus-visible{
+    outline:2px solid var(--azure);
+    outline-offset:2px;
+  }
+  .ba-nav-btn svg{ width:18px; height:18px; }
+  .ba-counter{
+    font-size:13.5px;
+    font-weight:700;
+    color:var(--slate);
+    font-variant-numeric:tabular-nums;
+    min-width:64px;
+    text-align:center;
+  }
+
+  @media (max-width: 940px){
+    .ba-section{ padding:88px 6vw 96px; }
+  }
+
+  /* --- Reviews --- */
+  .reviews-section{
+    background:var(--sky-soft);
+    padding:110px 0 120px;
+  }
+  .reviews-inner{
+    max-width:1240px;
+    margin:0 auto;
+  }
+  .reviews-head{
+    text-align:center;
+    max-width:640px;
+    margin:0 auto 56px;
+    padding:0 6vw;
+  }
+  .reviews-head h2{
+    margin:0 0 14px;
+    font-size:clamp(1.9rem, 1.5rem + 1.7vw, 2.6rem);
+    font-weight:700;
+    letter-spacing:-0.015em;
+    text-wrap:balance;
+    color:var(--navy);
+  }
+  .reviews-sub{
+    margin:0;
+    font-size:16.5px;
+    line-height:1.6;
+    color:var(--slate);
+  }
+
+  .reviews-carousel{
+    position:relative;
+    outline:none;
+  }
+  .reviews-carousel:focus-visible .reviews-viewport{
+    outline:2px solid var(--azure);
+    outline-offset:6px;
+    border-radius:24px;
+  }
+  .reviews-viewport{
+    overflow:hidden;
+    touch-action:pan-y;
+  }
+  .reviews-track{
+    display:flex;
+    transition:transform .6s cubic-bezier(.16,1,.3,1);
+    will-change:transform;
+  }
+  .review-item{
+    flex:0 0 auto;
+    padding:0 12px;
+  }
+  .review-card{
+    height:100%;
+    background:var(--surface);
+    border-radius:22px;
+    box-shadow:0 24px 54px -26px var(--shadow-color);
+    padding:44px 48px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+    opacity:0.35;
+    transform:scale(0.94);
+    transition:opacity .5s ease, transform .5s ease;
+  }
+  .review-item.is-active .review-card{
+    opacity:1;
+    transform:scale(1);
+  }
+  .review-stars{
+    color:var(--gold);
+    font-size:18px;
+    letter-spacing:3px;
+    margin-bottom:22px;
+  }
+  .review-text{
+    margin:0 0 28px;
+    font-size:17px;
+    line-height:1.7;
+    color:var(--navy);
+    max-width:52ch;
+  }
+  .review-footer{
+    display:flex;
+    align-items:center;
+    gap:12px;
+  }
+  .review-avatar{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    background:var(--sky);
+    color:var(--navy);
+    font-weight:700;
+    font-size:14.5px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex:0 0 auto;
+  }
+  .review-meta{
+    text-align:left;
+  }
+  .review-name{
+    font-size:14.5px;
+    font-weight:700;
+    color:var(--navy);
+    line-height:1.3;
+  }
+  .review-source{
+    display:flex;
+    align-items:center;
+    gap:5px;
+    font-size:12px;
+    color:var(--slate);
+    margin-top:2px;
+  }
+  .review-source svg{ width:12px; height:12px; }
+
+  .reviews-nav-btn{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    width:48px;
+    height:48px;
+    border-radius:50%;
+    border:1px solid var(--card-border);
+    background:var(--surface);
+    color:var(--navy);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    cursor:pointer;
+    box-shadow:0 14px 30px -16px var(--shadow-color);
+    transition:background .15s ease, transform .15s ease;
+    z-index:5;
+  }
+  .reviews-nav-btn:hover{ background:var(--sky); }
+  .reviews-nav-btn:focus-visible{
+    outline:2px solid var(--azure);
+    outline-offset:2px;
+  }
+  .reviews-nav-btn svg{ width:20px; height:20px; }
+  .reviews-nav-prev{ left:2vw; }
+  .reviews-nav-next{ right:2vw; }
+
+  .reviews-dots{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    margin-top:36px;
+  }
+  .reviews-dot{
+    width:9px;
+    height:9px;
+    border-radius:50%;
+    background:var(--card-border);
+    border:none;
+    padding:0;
+    cursor:pointer;
+    transition:background .2s ease, transform .2s ease;
+  }
+  .reviews-dot.is-active{
+    background:var(--azure);
+    transform:scale(1.25);
+  }
+  .reviews-dot:focus-visible{
+    outline:2px solid var(--azure);
+    outline-offset:3px;
+  }
+
+  @media (max-width: 940px){
+    .reviews-section{ padding:88px 0 96px; }
+    .review-card{ padding:34px 26px; }
+    .review-text{ font-size:16px; }
+    .reviews-nav-btn{ display:none; }
+  }
+
+  /* --- Service Areas --- */
+  .areas-section{
+    background:var(--navy);
+    padding:96px 6vw 110px;
+    text-align:center;
+  }
+  .areas-inner{
+    max-width:900px;
+    margin:0 auto;
+  }
+  .areas-section .eyebrow-label{
+    color:#8FB7E8;
+  }
+  .areas-section h2{
+    margin:12px 0 40px;
+    font-size:clamp(1.7rem, 1.3rem + 1.6vw, 2.4rem);
+    font-weight:700;
+    letter-spacing:-0.015em;
+    line-height:1.2;
+    text-wrap:balance;
+    color:#fff;
+  }
+  .areas-pills{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:center;
+    gap:14px;
+    margin-bottom:36px;
+  }
+  .area-pill{
+    display:inline-block;
+    background:#10336D;
+    border:1px solid rgba(255,255,255,0.08);
+    color:#fff;
+    font-size:14.5px;
+    font-weight:700;
+    padding:12px 22px;
+    border-radius:999px;
+    box-shadow:0 10px 22px -14px rgba(0,0,0,0.45);
+    text-decoration:none;
+    transition:background-color .2s ease, border-color .2s ease, transform .2s ease;
+  }
+  .area-pill:hover{
+    background:#184587;
+    border-color:rgba(255,255,255,0.22);
+    transform:translateY(-2px);
+  }
+  .area-pill:focus-visible{
+    outline:3px solid #fff;
+    outline-offset:3px;
+  }
+  .areas-note{
+    margin:0 auto;
+    max-width:56ch;
+    font-size:15px;
+    line-height:1.6;
+    color:rgba(255,255,255,0.7);
+  }
+
+  @media (max-width: 940px){
+    .areas-section{ padding:80px 6vw 90px; }
+    .areas-pills{ gap:10px; }
+    .area-pill{ padding:10px 18px; font-size:14px; }
+  }
+
+  /* --- About --- */
+  .about-section{
+    background:var(--bg);
+    padding:110px 6vw;
+  }
+  .about-inner{
+    max-width:1180px;
+    margin:0 auto;
+    display:grid;
+    grid-template-columns:minmax(0,1fr) minmax(0,460px);
+    gap:72px;
+    align-items:center;
+  }
+  .about-copy h2{
+    margin:12px 0 22px;
+    font-size:clamp(1.9rem, 1.4rem + 2vw, 2.7rem);
+    font-weight:700;
+    letter-spacing:-0.015em;
+    line-height:1.15;
+    text-wrap:balance;
+    color:var(--navy);
+  }
+  .about-copy p{
+    margin:0 0 18px;
+    font-size:16px;
+    line-height:1.7;
+    color:var(--slate);
+    max-width:56ch;
+  }
+  .about-statement{
+    margin:28px 0 0;
+    padding-left:20px;
+    border-left:3px solid var(--leaf);
+    font-size:18px;
+    font-weight:700;
+    line-height:1.5;
+    color:var(--navy);
+  }
+  .about-photo{
+    border-radius:22px;
+    overflow:hidden;
+    box-shadow:0 30px 60px -20px var(--shadow-color);
+  }
+  .about-photo img{
+    width:100%;
+    height:100%;
+    display:block;
+    object-fit:cover;
+    aspect-ratio:1/1;
+  }
+
+  @media (max-width: 940px){
+    .about-section{ padding:88px 6vw 96px; }
+    .about-inner{ grid-template-columns:1fr; gap:36px; }
+    .about-photo{ order:-1; max-width:380px; margin:0 auto; }
+  }
+
+  /* --- FAQ --- */
+  .faq-section{
+    background:var(--sky-soft);
+    padding:110px 6vw 120px;
+  }
+  .faq-inner{
+    max-width:1080px;
+    margin:0 auto;
+  }
+  .faq-head{
+    text-align:center;
+    max-width:640px;
+    margin:0 auto 56px;
+  }
+  .faq-head h2{
+    margin:12px 0 14px;
+    font-size:clamp(1.9rem, 1.5rem + 1.7vw, 2.6rem);
+    font-weight:700;
+    letter-spacing:-0.015em;
+    text-wrap:balance;
+    color:var(--navy);
+  }
+  .faq-sub{
+    margin:0;
+    font-size:16.5px;
+    line-height:1.6;
+    color:var(--slate);
+  }
+
+  .faq-grid{
+    display:grid;
+    grid-template-columns:repeat(2, minmax(0,1fr));
+    gap:0 56px;
+    margin-bottom:56px;
+  }
+  .faq-item{
+    border-bottom:1px solid var(--card-border);
+  }
+  .faq-item:first-child{
+    border-top:1px solid var(--card-border);
+  }
+  .faq-item h3{ margin:0; }
+  .faq-question{
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:20px;
+    padding:22px 4px;
+    background:none;
+    border:none;
+    text-align:left;
+    font-family:inherit;
+    font-size:16px;
+    font-weight:700;
+    color:var(--navy);
+    cursor:pointer;
+  }
+  .faq-question:focus-visible{
+    outline:2px solid var(--azure);
+    outline-offset:3px;
+    border-radius:6px;
+  }
+  .faq-icon{
+    position:relative;
+    flex:0 0 auto;
+    width:20px;
+    height:20px;
+  }
+  .faq-icon-h,
+  .faq-icon-v{
+    position:absolute;
+    top:50%;
+    left:50%;
+    background:var(--azure);
+    transform:translate(-50%,-50%);
+    transition:transform .25s ease, opacity .25s ease;
+  }
+  .faq-icon-h{ width:14px; height:2px; }
+  .faq-icon-v{ width:2px; height:14px; }
+  .faq-item.is-open .faq-icon-v{ transform:translate(-50%,-50%) scaleY(0); }
+
+  .faq-answer-wrap{
+    display:grid;
+    grid-template-rows:0fr;
+    transition:grid-template-rows .35s ease;
+  }
+  .faq-item.is-open .faq-answer-wrap{
+    grid-template-rows:1fr;
+  }
+  .faq-answer-inner{
+    overflow:hidden;
+  }
+  .faq-answer{
+    padding:0 4px 22px;
+    max-width:56ch;
+    font-size:15px;
+    line-height:1.65;
+    color:var(--slate);
+  }
+
+  .faq-cta{
+    text-align:center;
+  }
+  .faq-cta p{
+    margin:0 0 20px;
+    font-size:17px;
+    font-weight:700;
+    color:var(--navy);
+  }
+
+  @media (max-width: 940px){
+    .faq-section{ padding:88px 6vw 96px; }
+    .faq-grid{ grid-template-columns:1fr; gap:0; }
+    .faq-question{ font-size:15px; padding:20px 2px; }
+  }
+
+  /* --- Final CTA + Form --- */
+  .final-section{
+    background:var(--navy);
+    padding:120px 6vw 100px;
+    text-align:center;
+  }
+  .final-inner{
+    max-width:900px;
+    margin:0 auto;
+  }
+  .final-section h2{
+    margin:12px 0 14px;
+    font-size:clamp(2rem, 1.5rem + 2vw, 2.9rem);
+    font-weight:700;
+    letter-spacing:-0.02em;
+    text-wrap:balance;
+    color:#fff;
+  }
+  .final-sub{
+    margin:0 auto 44px;
+    max-width:52ch;
+    font-size:17px;
+    line-height:1.6;
+    color:rgba(255,255,255,0.78);
+  }
+  .final-card{
+    position:static;
+    top:auto;
+    left:auto;
+    transform:none;
+    text-align:left;
+    max-width:1000px;
+    width:100%;
+    margin:0 auto;
+  }
+  .final-trust{
+    margin:28px 0 0;
+    font-size:13.5px;
+    font-weight:600;
+    letter-spacing:0.02em;
+    color:rgba(255,255,255,0.65);
+  }
+
+  @media (max-width: 940px){
+    .final-section{ padding:96px 6vw 88px; }
+    .final-sub{ margin-bottom:32px; }
+  }
+
+  footer.site{ padding:64px 6vw 30px; position:relative; background-color:#081B45; overflow:hidden; }
+  footer.site .top{ max-width:1240px; margin:0 auto; display:flex; align-items:flex-start; justify-content:space-between; gap:40px; flex-wrap:wrap; padding-bottom:44px; border-bottom:1px solid rgba(255,255,255,0.12); }
+  footer.site .brand{ max-width:320px; }
+  footer.site .brand .row{ display:flex; align-items:center; gap:11px; margin-bottom:16px; }
+  footer.site .brand .row span{ font-weight:700; font-size:18px; color:#fff; }
+  footer.site .brand p{ font-size:15px; line-height:1.6; color:#9FB0CC; margin:0; }
+  footer.site .cols{ display:flex; gap:64px; flex-wrap:wrap; }
+  footer.site .col-title{ font-size:13px; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; color:var(--leaf); margin-bottom:16px; }
+  footer.site .col-links{ display:flex; flex-direction:column; gap:11px; }
+  footer.site .col-links a, footer.site .col-links span{ color:#B7C4DC; font-size:15px; text-decoration:none; }
+  footer.site .bottom{ max-width:1240px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; gap:20px; flex-wrap:wrap; padding-top:22px; }
+  footer.site .bottom span{ font-size:14px; color:#7E8FAE; }
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;600;700;800&display=swap">
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18372624531"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'AW-18372624531');
+</script>
+</head>
+<body>
+<section class="hero">
+<header class="site-header">
+  <img fetchpriority="high" width="128" height="128" decoding="async" class="site-logo" src="/assets/img/logo.webp" alt="EZClean Pros logo">
+
+  <nav class="site-nav" id="siteNav">
+    <a href="#services">Services</a>
+    <a href="#how-it-works">How It Works</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#areas">Areas</a>
+    <a href="#faq">FAQ</a>
+    <a href="#about">About</a>
+    <a class="nav-cta" href="#quoteForm">BOOK NOW</a>
+  </nav>
+
+  <button type="button" class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="siteNav" aria-label="Open menu">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+  </button>
+</header>
+  <div class="hero-media">
+        <img fetchpriority="high" width="1600" height="901" decoding="async" src="/assets/img/hero.webp" alt="EZClean Pros cleaning professional at work in a San Diego home">
+      <div class="hero-overlay"></div>
+  </div>
+
+  <img class="hero-seal" src="/assets/img/licensed-insured-bonded-seal.png" alt="Licensed, Insured &amp; Bonded" width="1254" height="1254" decoding="async">
+
+  <div class="hero-inner">
+    <div class="hero-content">
+      <span class="eyebrow">LOCAL HOUSE CLEANING &bull; SAN DIEGO, CA</span>
+      <h1>House Cleaning in San Diego You Can Actually Count On</h1>
+      <p class="lede">Enjoy a consistently clean home with a professional who gets to know your space, your preferences and the details that matter to you. Reliable residential cleaning throughout San Diego.</p>
+      <img class="hero-seal-mobile" src="/assets/img/licensed-insured-bonded-seal.png" alt="Licensed, Insured &amp; Bonded" width="1254" height="1254" loading="lazy" decoding="async">
+      <div class="cta-row">
+        <a class="cta" href="#quoteForm">
+          GET MY FREE QUOTE
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a class="cta-call" href="tel:+18583705205" aria-label="Call EZClean Pros at (858) 370-5205">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          CALL (858) 370-5205
+        </a>
+      </div>
+      <div class="stars-line">
+        <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+        <svg class="google-icon" viewBox="0 0 48 48" aria-hidden="true"><path fill="#4285F4" d="M45.1 24.5c0-1.6-.1-3.2-.4-4.7H24v9h11.8c-.5 2.8-2.1 5.1-4.4 6.7v5.6h7.1c4.2-3.9 6.6-9.6 6.6-16.6z"/><path fill="#34A853" d="M24 46c5.9 0 10.9-2 14.5-5.3l-7.1-5.6c-2 1.3-4.5 2.1-7.4 2.1-5.7 0-10.5-3.8-12.2-9h-7.3v5.8C7.9 40.9 15.3 46 24 46z"/><path fill="#FBBC05" d="M11.8 28.2c-.4-1.3-.7-2.7-.7-4.2s.3-2.9.7-4.2v-5.8H4.5A22 22 0 0 0 2 24c0 3.6.9 6.9 2.5 9.9l7.3-5.7z"/><path fill="#EA4335" d="M24 10.8c3.2 0 6.1 1.1 8.4 3.3l6.3-6.3C34.9 4.2 29.9 2 24 2 15.3 2 7.9 7.1 4.5 14.2l7.3 5.8c1.7-5.2 6.5-9.2 12.2-9.2z"/></svg>
+        <span>Trusted by San Diego homeowners</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="quote-anchor">
+  <form class="quote-card" id="quoteForm" novalidate>
+    <div class="quote-card-inner">
+      <div class="quote-head">
+        <h2>Get a Free Quote</h2>
+        <p>Tell us how to reach you and we&rsquo;ll get back to you with the next steps.</p>
+      </div>
+      <div class="quote-row">
+        <div class="field">
+          <label for="qf-name">Full Name</label>
+          <input id="qf-name" name="name" type="text" placeholder="Full Name" autocomplete="name" required>
+          <span class="field-error" data-error-for="name">Enter your full name.</span>
+        </div>
+        <div class="field">
+          <label for="qf-phone">Phone Number</label>
+          <input id="qf-phone" name="phone" type="tel" inputmode="tel" placeholder="(555) 123-4567" autocomplete="tel" required>
+          <span class="field-error" data-error-for="phone">Enter a valid phone number.</span>
+        </div>
+        <div class="field">
+          <label for="qf-email">Email</label>
+          <input id="qf-email" name="email" type="email" placeholder="Email" autocomplete="email" required>
+          <span class="field-error" data-error-for="email">Enter a valid email address.</span>
+        </div>
+        <button type="submit" class="quote-submit">
+          <span class="btn-label">GET MY FREE QUOTE</span>
+          <span class="btn-spinner" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="quote-success" role="status" aria-live="polite" hidden>
+      <span class="success-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+      </span>
+      <h2>Thanks &mdash; you&rsquo;re all set!</h2>
+      <p>A member of our team will reach out shortly to confirm your free quote.</p>
+    </div>
+  </form>
+</div>
+
+<section class="next-section">
+  <div class="next-section-inner">
+    <h2>Cleaning You Can Rely On</h2>
+    <p class="value-sub">A more consistent cleaning experience, from the professional who enters your home to the way each visit is completed.</p>
+    <div class="value-grid">
+      <article class="value-card" style="--accent:var(--leaf)">
+        <h3>A Cleaner Who Knows Your Home</h3>
+        <p>Less explaining. More consistency. A professional who gets familiar with your space and preferences.</p>
+      </article>
+      <article class="value-card" style="--accent:var(--azure)">
+        <h3>A Checklist That Keeps Every Cleaning Consistent</h3>
+        <p>Our detailed cleaning checklist helps make sure the same important areas are covered on every visit.</p>
+      </article>
+      <article class="value-card" style="--accent:var(--navy)">
+        <h3>Reliable From Booking to Cleaning Day</h3>
+        <p>Clear communication, dependable scheduling and less for you to manage.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="services-section" id="services">
+  <div class="services-inner">
+    <div class="services-head">
+      <span class="eyebrow-label">OUR SERVICES</span>
+      <h2>Cleaning Services for Every Need</h2>
+      <p class="services-sub">Professional cleaning solutions for homes, businesses, rentals and property turnovers throughout San Diego.</p>
+    </div>
+    <div class="services-grid">
+      <article class="service-card" id="residential-cleaning">
+        <div class="service-title-row">
+          <span class="service-number">01</span>
+          <span class="service-rule"></span>
+          <h3>Residential Cleaning</h3>
+        </div>
+        <p class="desc">Recurring house cleaning and maid service for houses, condos, townhomes and vacation homes. Kitchens, bathrooms, bedrooms and living areas cleaned thoroughly on every visit by a housekeeper who gets to know your home.</p>
+        <a class="learn-more" href="/services/residential-cleaning/">Learn More <span aria-hidden="true">&rarr;</span></a>
+      </article>
+
+      <span id="move-in-out" aria-hidden="true"></span><article class="service-card" id="deep-clean">
+        <div class="service-title-row">
+          <span class="service-number">02</span>
+          <span class="service-rule"></span>
+          <h3>Deep Clean / Move-Out Detailing</h3>
+        </div>
+        <p class="desc">A more intensive cleaning for the areas standard visits don&rsquo;t always reach, including baseboards, appliances, fixtures and detailed buildup removal.</p>
+        <p class="note">Ideal for move-ins, move-outs and seasonal resets.</p>
+        <a class="learn-more" href="/services/deep-cleaning-move-in-out/">Learn More <span aria-hidden="true">&rarr;</span></a>
+      </article>
+
+      <article class="service-card" id="office-janitorial">
+        <div class="service-title-row">
+          <span class="service-number">03</span>
+          <span class="service-rule"></span>
+          <h3>Office &amp; Janitorial</h3>
+        </div>
+        <p class="desc">Daily, weekly or customized cleaning plans for small and mid-size businesses.</p>
+        <p class="note">We keep lobbies, break rooms, restrooms and common areas clean, professional and client-ready.</p>
+        <a class="learn-more" href="/services/office-janitorial/">Learn More <span aria-hidden="true">&rarr;</span></a>
+      </article>
+
+      <article class="service-card" id="property-turnover">
+        <div class="service-title-row">
+          <span class="service-number">04</span>
+          <span class="service-rule"></span>
+          <h3>Real Estate &amp; Property Turnover</h3>
+        </div>
+        <p class="desc">Reliable turnover cleaning for realtors, property managers and rental agencies between tenants or before a property is listed.</p>
+        <p class="note">Scheduled around your timeline, not ours.</p>
+        <a class="learn-more" href="/services/real-estate-property-turnover/">Learn More <span aria-hidden="true">&rarr;</span></a>
+      </article>
+
+      <article class="service-card" id="vacation-rental">
+        <div class="service-title-row">
+          <span class="service-number">05</span>
+          <span class="service-rule"></span>
+          <h3>Vacation Rental Cleaning</h3>
+        </div>
+        <p class="desc">Detailed turnover cleaning for vacation homes and seasonal properties, including kitchen and bathroom resets, fresh linens and a final walkthrough before the next arrival.</p>
+        <a class="learn-more" href="/services/vacation-rental-cleaning/">Learn More <span aria-hidden="true">&rarr;</span></a>
+      </article>
+
+      <article class="service-card" id="airbnb-turnover">
+        <div class="service-title-row">
+          <span class="service-number">06</span>
+          <span class="service-rule"></span>
+          <h3>Airbnb Turnover Cleaning</h3>
+        </div>
+        <p class="desc">Fast turnovers between bookings with beds made, amenities restocked, inventory and damage checks, and a final confirmation that the property is guest-ready.</p>
+        <a class="learn-more" href="/services/airbnb-turnover-cleaning/">Learn More <span aria-hidden="true">&rarr;</span></a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="hiw-section" id="how-it-works">
+  <div class="hiw-inner">
+    <div class="hiw-head reveal">
+      <span class="eyebrow-label center">HOW IT WORKS</span>
+      <h2>A Cleaner Space in 3 Simple Steps</h2>
+      <p class="hiw-sub">From your first quote to cleaning day, we keep the process simple.</p>
+    </div>
+
+    <div class="hiw-steps">
+      <div class="hiw-line" aria-hidden="true"></div>
+
+      <div class="hiw-step reveal">
+        <div class="hiw-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/>
+            <path d="M14 3v5h5"/>
+            <path d="M9 13h6M9 17h6"/>
+          </svg>
+        </div>
+        <span class="hiw-number">01</span>
+        <h3>Request Your Quote</h3>
+        <p>Tell us how to reach you and what type of cleaning you&rsquo;re looking for.</p>
+      </div>
+
+      <div class="hiw-step reveal">
+        <div class="hiw-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="5" width="18" height="16" rx="2"/>
+            <path d="M3 10h18M8 3v4M16 3v4"/>
+            <path d="M8 14h2M14 14h2M8 17h2"/>
+          </svg>
+        </div>
+        <span class="hiw-number">02</span>
+        <h3>Schedule Your Cleaning</h3>
+        <p>Choose a day and service that works for your home, business or property.</p>
+      </div>
+
+      <div class="hiw-step reveal">
+        <div class="hiw-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 12l2 2 4-4"/>
+            <circle cx="12" cy="12" r="9"/>
+          </svg>
+        </div>
+        <span class="hiw-number">03</span>
+        <h3>Enjoy Your Clean Space</h3>
+        <p>Our team takes care of the cleaning so you have one less thing to manage.</p>
+      </div>
+    </div>
+
+    <div class="hiw-cta reveal">
+      <a class="cta" href="#quoteForm">
+        GET MY FREE QUOTE
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="process-section">
+  <div class="process-inner">
+    <div class="process-head">
+      <div class="process-photo">
+        <img loading="lazy" width="800" height="1067" decoding="async" src="/assets/img/process.webp" alt="EZClean Pros professional making a bed as part of the cleaning checklist">
+      </div>
+      <div class="process-copy">
+        <span class="eyebrow-label light">OUR CLEANING PROCESS</span>
+        <h2>A Checklist That Keeps Every Cleaning Consistent</h2>
+        <p>Every visit follows a detailed checklist, so the important details don&rsquo;t depend on memory.</p>
+      </div>
+    </div>
+
+    <div class="checklist-grid">
+      <article class="checklist-card">
+        <h3>Kitchen</h3>
+        <ul>
+          <li><span class="check-dot"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>Clean and disinfect countertops</li>
+          <li><span class="check-dot"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>Clean stovetop and backsplash</li>
+          <li><span class="check-dot"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>Clean inside and outside of microwave</li>
+          <li><span class="check-dot"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>Clean refrigerator exterior and check for spills</li>
+          <li><span class="check-dot"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>Clean oven exterior</li>
+          <li><span class="check-dot"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>Clean sink and faucet</li>
+          <li><span class="check-dot"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>Wipe cabinet doors and handles</li>
+          <li><span class="check-dot"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>Clean small appliances</li>
+          <li><span class="check-dot"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>Empty trash and replace liner</li>
+          <li><span class="check-dot"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>Sweep and mop floors</li>
+        </ul>
+      </article>
+
+      <article class="checklist-card">
+        <h3>Bathrooms</h3>
+        <ul>
+          <li><span class="check-dot"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>Clean and disinfect toilets</li>
+          <li><span class="check-dot"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>Scrub showers and tubs</li>
+          <li><span class="check-dot"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>Clean shower doors and fixtures</li>
+          <li><span class="check-dot"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>Clean sinks and faucets</li>
+          <li><span class="check-dot"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>Clean countertops and vanities</li>
+          <li><span class="check-dot"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>Clean mirrors</li>
+          <li><span class="check-dot"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>Wipe cabinets and handles</li>
+          <li><span class="check-dot"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>Empty trash and replace liner</li>
+          <li><span class="check-dot"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>Sweep and mop floors</li>
+        </ul>
+      </article>
+
+      <article class="checklist-card">
+        <h3>Bedrooms</h3>
+        <ul>
+          <li><span class="check-dot"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>Dust furniture and surfaces</li>
+          <li><span class="check-dot"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>Vacuum rugs and carpets</li>
+          <li><span class="check-dot"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>Sweep and mop hard floors</li>
+          <li><span class="check-dot"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>Wipe light switches and door handles</li>
+          <li><span class="check-dot"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>Dust lamps and decorative items</li>
+          <li><span class="check-dot"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>Make beds / change linens when requested</li>
+          <li><span class="check-dot"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>Empty trash</li>
+        </ul>
+      </article>
+
+      <article class="checklist-card">
+        <h3>Living Areas</h3>
+        <ul>
+          <li><span class="check-dot"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>Dust furniture and surfaces</li>
+          <li><span class="check-dot"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>Clean coffee tables and side tables</li>
+          <li><span class="check-dot"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>Vacuum sofas and chairs</li>
+          <li><span class="check-dot"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>Vacuum rugs and carpets</li>
+          <li><span class="check-dot"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>Sweep and mop hard floors</li>
+          <li><span class="check-dot"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>Clean windows and glass doors as needed</li>
+          <li><span class="check-dot"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>Wipe light switches and door handles</li>
+          <li><span class="check-dot"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>Dust lamps and decorative items</li>
+          <li><span class="check-dot"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>Empty trash</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="ba-section">
+  <div class="ba-inner">
+    <div class="ba-head">
+      <span class="eyebrow-label center">BEFORE &amp; AFTER</span>
+      <h2>See the Difference</h2>
+      <p class="ba-lead">Real cleaning. Real homes. Real results.</p>
+      <p class="ba-copy">From kitchens and bathrooms to move-outs and detailed cleanings, see how EZClean Pros transforms the spaces we care for.</p>
+    </div>
+
+    <div class="ba-carousel">
+      <div class="ba-viewport" id="baViewport">
+        <div class="ba-track" id="baTrack"></div>
+      </div>
+
+      <div class="ba-controls">
+        <button type="button" class="ba-nav-btn" id="baPrev" aria-label="Previous pair">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"/></svg>
+        </button>
+        <span class="ba-counter" id="baCounter">1 / 17</span>
+        <button type="button" class="ba-nav-btn" id="baNext" aria-label="Next pair">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="reviews-section" id="reviews">
+  <div class="reviews-inner">
+    <div class="reviews-head">
+      <span class="eyebrow-label center">REVIEWS</span>
+      <h2>What Our Clients Say</h2>
+      <p class="reviews-sub">Real feedback from clients who trusted EZClean Pros with their homes and properties.</p>
+    </div>
+
+    <div class="reviews-carousel" id="reviewsCarousel" tabindex="0" role="region" aria-roledescription="carousel" aria-label="Client reviews">
+      <div class="reviews-viewport" id="reviewsViewport">
+        <div class="reviews-track" id="reviewsTrack"></div>
+      </div>
+
+      <button type="button" class="reviews-nav-btn reviews-nav-prev" id="reviewsPrev" aria-label="Previous review">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"/></svg>
+      </button>
+      <button type="button" class="reviews-nav-btn reviews-nav-next" id="reviewsNext" aria-label="Next review">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+      </button>
+
+      <div class="reviews-dots" id="reviewsDots"></div>
+    </div>
+  </div>
+</section>
+
+<section class="areas-section" id="areas">
+  <div class="areas-inner">
+    <span class="eyebrow-label center">SERVICE AREAS</span>
+    <h2>Proudly Serving San Diego and Surrounding Communities</h2>
+    <div class="areas-pills">
+      <a class="area-pill" href="/cities/san-diego/">San Diego</a>
+      <a class="area-pill" href="/cities/la-jolla/">La Jolla</a>
+      <a class="area-pill" href="/cities/pacific-beach/">Pacific Beach</a>
+      <a class="area-pill" href="/cities/chula-vista/">Chula Vista</a>
+      <a class="area-pill" href="/cities/coronado/">Coronado</a>
+      <a class="area-pill" href="/cities/national-city/">National City</a>
+      <a class="area-pill" href="/cities/point-loma/">Point Loma</a>
+      <a class="area-pill" href="/cities/mission-valley/">Mission Valley</a>
+      <a class="area-pill" href="/cities/clairemont/">Clairemont</a>
+      <a class="area-pill" href="/cities/carlsbad/">Carlsbad</a>
+      <a class="area-pill" href="/cities/encinitas/">Encinitas</a>
+    </div>
+    <p class="areas-note">Don&rsquo;t see your town on the list? Call anyway. If it&rsquo;s within reach of San Diego County, there&rsquo;s a good chance we can still get to you.</p>
+  </div>
+</section>
+
+<section class="about-section" id="about">
+  <div class="about-inner">
+    <div class="about-copy">
+      <span class="eyebrow-label">ABOUT EZCLEAN PROS</span>
+      <h2>Local Cleaning. Personal Service.</h2>
+      <p>EZClean Pros is a local San Diego cleaning company built around trust, consistency and long-term relationships.</p>
+      <p>We believe the best cleaning experience is one where you don&rsquo;t have to start over every time. Whenever possible, we keep continuity with the professional who services your home, so they become familiar with your space, your preferences and the details that matter to you.</p>
+      <p>Our goal is simple: deliver reliable cleaning, clear communication and a level of consistency you can feel from one visit to the next.</p>
+      <p class="about-statement">A local team. A familiar service. A cleaner space you can count on.</p>
+    </div>
+    <div class="about-photo">
+      <img loading="lazy" width="960" height="960" decoding="async" src="/assets/img/about.webp" alt="EZClean Pros team cleaning a San Diego office">
+    </div>
+  </div>
+</section>
+
+<section class="faq-section" id="faq">
+  <div class="faq-inner">
+    <div class="faq-head">
+      <span class="eyebrow-label center">FAQ</span>
+      <h2>Questions? We&rsquo;ve Got Answers.</h2>
+      <p class="faq-sub">Everything you need to know before booking your cleaning with EZClean Pros.</p>
+    </div>
+
+    <div class="faq-grid" id="faqGrid">
+      <div class="faq-col">
+        <div class="faq-item" data-faq>
+          <h3>
+            <button type="button" class="faq-question" aria-expanded="false" aria-controls="faq-panel-1" id="faq-trigger-1">
+              <span>Are you licensed, insured and bonded?</span>
+              <span class="faq-icon" aria-hidden="true"><span class="faq-icon-h"></span><span class="faq-icon-v"></span></span>
+            </button>
+          </h3>
+          <div class="faq-answer-wrap">
+            <div class="faq-answer-inner">
+              <div class="faq-answer" id="faq-panel-1" role="region" aria-labelledby="faq-trigger-1">
+                Yes. EZClean Pros is licensed, insured and bonded, giving you added peace of mind when our team is in your home or property.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item" data-faq>
+          <h3>
+            <button type="button" class="faq-question" aria-expanded="false" aria-controls="faq-panel-2" id="faq-trigger-2">
+              <span>Do I need to be home?</span>
+              <span class="faq-icon" aria-hidden="true"><span class="faq-icon-h"></span><span class="faq-icon-v"></span></span>
+            </button>
+          </h3>
+          <div class="faq-answer-wrap">
+            <div class="faq-answer-inner">
+              <div class="faq-answer" id="faq-panel-2" role="region" aria-labelledby="faq-trigger-2">
+                No. Many clients provide access instructions so we can complete the cleaning while they&rsquo;re away.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item" data-faq>
+          <h3>
+            <button type="button" class="faq-question" aria-expanded="false" aria-controls="faq-panel-3" id="faq-trigger-3">
+              <span>Do you bring cleaning supplies?</span>
+              <span class="faq-icon" aria-hidden="true"><span class="faq-icon-h"></span><span class="faq-icon-v"></span></span>
+            </button>
+          </h3>
+          <div class="faq-answer-wrap">
+            <div class="faq-answer-inner">
+              <div class="faq-answer" id="faq-panel-3" role="region" aria-labelledby="faq-trigger-3">
+                Yes. Our team arrives prepared with the supplies and equipment needed for your scheduled cleaning. If you have product preferences, let us know in advance.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item" data-faq>
+          <h3>
+            <button type="button" class="faq-question" aria-expanded="false" aria-controls="faq-panel-4" id="faq-trigger-4">
+              <span>Can I request the same cleaner?</span>
+              <span class="faq-icon" aria-hidden="true"><span class="faq-icon-h"></span><span class="faq-icon-v"></span></span>
+            </button>
+          </h3>
+          <div class="faq-answer-wrap">
+            <div class="faq-answer-inner">
+              <div class="faq-answer" id="faq-panel-4" role="region" aria-labelledby="faq-trigger-4">
+                Yes. Whenever possible, we prioritize consistency so the same housekeeper can become familiar with your home and preferences &mdash; the difference between a rotating crew and a maid service you actually recognize at the door.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-col">
+        <div class="faq-item" data-faq>
+          <h3>
+            <button type="button" class="faq-question" aria-expanded="false" aria-controls="faq-panel-5" id="faq-trigger-5">
+              <span>How much does cleaning cost?</span>
+              <span class="faq-icon" aria-hidden="true"><span class="faq-icon-h"></span><span class="faq-icon-v"></span></span>
+            </button>
+          </h3>
+          <div class="faq-answer-wrap">
+            <div class="faq-answer-inner">
+              <div class="faq-answer" id="faq-panel-5" role="region" aria-labelledby="faq-trigger-5">
+                Pricing depends on the size and condition of the property, the type of cleaning and how often you need service. Request a free quote for pricing based on your needs.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item" data-faq>
+          <h3>
+            <button type="button" class="faq-question" aria-expanded="false" aria-controls="faq-panel-6" id="faq-trigger-6">
+              <span>Do you offer recurring cleaning?</span>
+              <span class="faq-icon" aria-hidden="true"><span class="faq-icon-h"></span><span class="faq-icon-v"></span></span>
+            </button>
+          </h3>
+          <div class="faq-answer-wrap">
+            <div class="faq-answer-inner">
+              <div class="faq-answer" id="faq-panel-6" role="region" aria-labelledby="faq-trigger-6">
+                Yes. We offer recurring residential cleaning with weekly, biweekly and monthly scheduling options, depending on availability.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item" data-faq>
+          <h3>
+            <button type="button" class="faq-question" aria-expanded="false" aria-controls="faq-panel-7" id="faq-trigger-7">
+              <span>Do you offer move-out cleaning?</span>
+              <span class="faq-icon" aria-hidden="true"><span class="faq-icon-h"></span><span class="faq-icon-v"></span></span>
+            </button>
+          </h3>
+          <div class="faq-answer-wrap">
+            <div class="faq-answer-inner">
+              <div class="faq-answer" id="faq-panel-7" role="region" aria-labelledby="faq-trigger-7">
+                Yes. Our Deep Clean / Move-Out Detailing service is designed for move-ins, move-outs and properties that need a more thorough reset.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item" data-faq>
+          <h3>
+            <button type="button" class="faq-question" aria-expanded="false" aria-controls="faq-panel-8" id="faq-trigger-8">
+              <span>What areas do you serve?</span>
+              <span class="faq-icon" aria-hidden="true"><span class="faq-icon-h"></span><span class="faq-icon-v"></span></span>
+            </button>
+          </h3>
+          <div class="faq-answer-wrap">
+            <div class="faq-answer-inner">
+              <div class="faq-answer" id="faq-panel-8" role="region" aria-labelledby="faq-trigger-8">
+                EZClean Pros serves San Diego and surrounding communities. Contact us with your ZIP code to confirm availability in your area.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-cta">
+      <p>Still have questions?</p>
+      <a class="cta" href="#quoteForm">
+        GET IN TOUCH
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="final-section">
+  <div class="final-inner">
+    <span class="eyebrow-label center light">READY WHEN YOU ARE</span>
+    <h2>Ready for a Cleaner Space?</h2>
+    <p class="final-sub">Reliable cleaning, clear communication and less for you to manage.</p>
+
+    <form class="quote-card final-card" id="finalQuoteForm" novalidate>
+      <div class="quote-card-inner">
+        <div class="quote-row final-row">
+          <div class="field">
+            <label for="fq-name">Full Name</label>
+            <input id="fq-name" name="name" type="text" placeholder="Full Name" autocomplete="name" required>
+            <span class="field-error" data-error-for="name">Enter your full name.</span>
+          </div>
+          <div class="field">
+            <label for="fq-phone">Phone Number</label>
+            <input id="fq-phone" name="phone" type="tel" inputmode="tel" placeholder="(555) 123-4567" autocomplete="tel" required>
+            <span class="field-error" data-error-for="phone">Enter a valid phone number.</span>
+          </div>
+          <div class="field">
+            <label for="fq-email">Email</label>
+            <input id="fq-email" name="email" type="email" placeholder="Email" autocomplete="email" required>
+            <span class="field-error" data-error-for="email">Enter a valid email address.</span>
+          </div>
+          <button type="submit" class="quote-submit">
+            <span class="btn-label">GET MY FREE QUOTE</span>
+            <span class="btn-spinner" aria-hidden="true"></span>
+          </button>
+        </div>
+      </div>
+
+      <div class="quote-success" role="status" aria-live="polite" hidden>
+        <span class="success-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+        </span>
+        <h2>Thanks &mdash; you&rsquo;re all set!</h2>
+        <p>A member of our team will reach out shortly to confirm your free quote.</p>
+      </div>
+    </form>
+
+    <p class="final-trust">Licensed, Insured &amp; Bonded &nbsp;&bull;&nbsp; Local San Diego Cleaning Company</p>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="top">
+    <div class="brand">
+      <div class="row"><span>EZClean Pros</span></div>
+      <p>Based in San Diego, working the coast and inland communities daily. No franchise call center in another state.</p>
+    </div>
+    <div class="cols">
+      <div>
+        <div class="col-title">Services</div>
+        <div class="col-links">
+          <a href="/services/residential-cleaning/">Residential Cleaning</a>
+          <a href="/services/deep-cleaning-move-in-out/">Deep Clean / Move-out Detailing</a>
+          <a href="/services/office-janitorial/">Office &amp; Janitorial</a>
+          <a href="/services/real-estate-property-turnover/">Real Estate &amp; Property Turnover</a>
+          <a href="/services/vacation-rental-cleaning/">Vacation Rental Cleaning</a>
+          <a href="/services/airbnb-turnover-cleaning/">Airbnb Turnover Cleaning</a>
+        </div>
+      </div>
+      <div>
+        <div class="col-title">Contact</div>
+        <div class="col-links">
+          <a href="tel:+18583705205">(858) 370-5205</a>
+          <a href="mailto:hello@ezcleaning.services">hello@ezcleaning.services</a>
+          <span>Serving San Diego, CA</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bottom">
+    <span>© 2026 EZClean Pros. San Diego, CA.</span>
+    <span>Bonded &amp; Insured · San Diego, California</span>
+  </div>
+</footer>
+
+<script>
+var ATTRIBUTION_STORAGE_KEY = 'ezcleaning_lead_attribution';
+var ATTRIBUTION_MAX_AGE_MS = 90 * 24 * 60 * 60 * 1000;
+var ATTRIBUTION_FIELDS = ['utm_source', 'utm_medium', 'utm_campaign', 'gclid'];
+
+function captureAttribution(){
+  try {
+    var params = new URLSearchParams(window.location.search);
+    var current = getStoredAttributionForSubmit();
+    var found = false;
+    ATTRIBUTION_FIELDS.forEach(function(field){
+      var value = (params.get(field) || '').trim().slice(0, 500);
+      if (value){
+        current[field] = value;
+        found = true;
+      }
+    });
+    if (found){
+      current.captured_at = Date.now();
+      localStorage.setItem(ATTRIBUTION_STORAGE_KEY, JSON.stringify(current));
+    }
+  } catch (e) {}
+}
+
+function getStoredAttributionForSubmit(){
+  var empty = { utm_source:'', utm_medium:'', utm_campaign:'', gclid:'' };
+  try {
+    var stored = JSON.parse(localStorage.getItem(ATTRIBUTION_STORAGE_KEY) || 'null');
+    if (!stored || !stored.captured_at || Date.now() - stored.captured_at > ATTRIBUTION_MAX_AGE_MS){
+      return empty;
+    }
+    ATTRIBUTION_FIELDS.forEach(function(field){
+      empty[field] = typeof stored[field] === 'string' ? stored[field].slice(0, 500) : '';
+    });
+  } catch (e) {}
+  return empty;
+}
+
+function initQuoteForm(formId){
+  var form = document.getElementById(formId);
+  if (!form) return;
+  var inner = form.querySelector('.quote-card-inner');
+  var success = form.querySelector('.quote-success');
+  var submitBtn = form.querySelector('.quote-submit');
+  var nameInput = form.querySelector('[name="name"]');
+  var phoneInput = form.querySelector('[name="phone"]');
+  var emailInput = form.querySelector('[name="email"]');
+
+  phoneInput.addEventListener('input', function(){
+    var digits = phoneInput.value.replace(/\D/g, '').slice(0, 10);
+    var out = digits;
+    if (digits.length > 6){
+      out = '(' + digits.slice(0,3) + ') ' + digits.slice(3,6) + '-' + digits.slice(6);
+    } else if (digits.length > 3){
+      out = '(' + digits.slice(0,3) + ') ' + digits.slice(3);
+    } else if (digits.length > 0){
+      out = '(' + digits;
+    }
+    phoneInput.value = out;
+  });
+
+  function isValidEmail(value){
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
+  }
+
+  function setFieldError(field, hasError){
+    var wrap = field.closest('.field');
+    wrap.classList.toggle('has-error', hasError);
+  }
+
+  function validate(){
+    var ok = true;
+
+    if (!nameInput.value.trim()){
+      setFieldError(nameInput, true);
+      ok = false;
+    } else {
+      setFieldError(nameInput, false);
+    }
+
+    var phoneDigits = phoneInput.value.replace(/\D/g, '');
+    if (phoneDigits.length !== 10){
+      setFieldError(phoneInput, true);
+      ok = false;
+    } else {
+      setFieldError(phoneInput, false);
+    }
+
+    if (!isValidEmail(emailInput.value.trim())){
+      setFieldError(emailInput, true);
+      ok = false;
+    } else {
+      setFieldError(emailInput, false);
+    }
+
+    return ok;
+  }
+
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    if (form.classList.contains('is-loading')) return;
+    if (!validate()) return;
+
+    form.classList.add('is-loading');
+    submitBtn.disabled = true;
+
+    var attribution = getStoredAttributionForSubmit();
+    var payload = {
+      name: nameInput.value.trim(),
+      phone: phoneInput.value.trim(),
+      email: emailInput.value.trim(),
+      city: 'San Diego',
+      service: 'House Cleaning',
+      details: formId === 'quoteForm' ? 'Homepage hero quote form' : 'Homepage final quote form',
+      utm_source: attribution.utm_source,
+      utm_medium: attribution.utm_medium,
+      utm_campaign: attribution.utm_campaign,
+      gclid: attribution.gclid
+    };
+
+    fetch('/api/lead', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload)
+    })
+      .then(function(response){
+        return response.json().catch(function(){ return {}; }).then(function(body){
+          return { ok: response.ok, body: body };
+        });
+      })
+      .then(function(result){
+        if (!result.ok || !result.body.success){
+          throw new Error(result.body.error || 'Unable to send your request. Please try again.');
+        }
+        try { if (typeof gtag === 'function') gtag('event', 'conversion', { 'send_to': 'AW-18372624531/u9alCIumg94cEJOB4LhE', 'value': 1.0, 'currency': 'USD' }); } catch (e) {}
+        form.reset();
+        inner.hidden = true;
+        success.hidden = false;
+      })
+      .catch(function(error){
+        window.alert(error.message || 'Unable to send your request. Please try again.');
+      })
+      .finally(function(){
+        form.classList.remove('is-loading');
+        submitBtn.disabled = false;
+      });
+  });
+}
+
+captureAttribution();
+initQuoteForm('quoteForm');
+initQuoteForm('finalQuoteForm');
+
+(function(){
+  var targets = document.querySelectorAll('.reveal');
+  var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (reduceMotion || !('IntersectionObserver' in window)){
+    targets.forEach(function(el){ el.classList.add('is-visible'); });
+    return;
+  }
+  var observer = new IntersectionObserver(function(entries){
+    entries.forEach(function(entry){
+      if (entry.isIntersecting){
+        entry.target.classList.add('is-visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.2 });
+  targets.forEach(function(el){ observer.observe(el); });
+})();
+</script>
+
+<script>
+window.BEFORE_AFTER_PAIRS = [
+  { before: "/assets/img/ba-01-before.webp", after: "/assets/img/ba-01-after.webp" },
+  { before: "/assets/img/ba-02-before.webp", after: "/assets/img/ba-02-after.webp" },
+  { before: "/assets/img/ba-03-before.webp", after: "/assets/img/ba-03-after.webp" },
+  { before: "/assets/img/ba-04-before.webp", after: "/assets/img/ba-04-after.webp" },
+  { before: "/assets/img/ba-05-before.webp", after: "/assets/img/ba-05-after.webp" },
+  { before: "/assets/img/ba-06-before.webp", after: "/assets/img/ba-06-after.webp" },
+  { before: "/assets/img/ba-07-before.webp", after: "/assets/img/ba-07-after.webp" },
+  { before: "/assets/img/ba-08-before.webp", after: "/assets/img/ba-08-after.webp" },
+  { before: "/assets/img/ba-09-before.webp", after: "/assets/img/ba-09-after.webp" },
+  { before: "/assets/img/ba-10-before.webp", after: "/assets/img/ba-10-after.webp" },
+  { before: "/assets/img/ba-11-before.webp", after: "/assets/img/ba-11-after.webp" },
+  { before: "/assets/img/ba-12-before.webp", after: "/assets/img/ba-12-after.webp" },
+  { before: "/assets/img/ba-13-before.webp", after: "/assets/img/ba-13-after.webp" },
+  { before: "/assets/img/ba-14-before.webp", after: "/assets/img/ba-14-after.webp" },
+  { before: "/assets/img/ba-15-before.webp", after: "/assets/img/ba-15-after.webp" },
+  { before: "/assets/img/ba-16-before.webp", after: "/assets/img/ba-16-after.webp" },
+  { before: "/assets/img/ba-17-before.webp", after: "/assets/img/ba-17-after.webp" },
+];
+
+(function(){
+  var pairs = window.BEFORE_AFTER_PAIRS || [];
+  if (!pairs.length) return;
+
+  var viewport = document.getElementById('baViewport');
+  var track = document.getElementById('baTrack');
+  var counter = document.getElementById('baCounter');
+  var prevBtn = document.getElementById('baPrev');
+  var nextBtn = document.getElementById('baNext');
+
+  var GAP = 24;
+  var index = 0;
+  var itemsPerView = 3;
+  var maxIndex = 0;
+  var step = 0;
+  var autoplayId = null;
+  var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  function makeItem(pair, i){
+    var item = document.createElement('div');
+    item.className = 'ba-item';
+
+    var frame = document.createElement('div');
+    frame.className = 'ba-frame';
+    frame.style.setProperty('--pos', '50%');
+
+    var eager = i < 3;
+    var afterImg = document.createElement('img');
+    afterImg.className = 'ba-img-after';
+    afterImg.src = pair.after;
+    afterImg.alt = 'After cleaning by EZClean Pros';
+    afterImg.width = 700; afterImg.height = 933;
+    afterImg.decoding = 'async';
+    afterImg.loading = eager ? 'eager' : 'lazy';
+
+    var beforeWrap = document.createElement('div');
+    beforeWrap.className = 'ba-before-wrap';
+    var beforeImg = document.createElement('img');
+    beforeImg.className = 'ba-img-before';
+    beforeImg.src = pair.before;
+    beforeImg.alt = 'Before cleaning by EZClean Pros';
+    beforeImg.width = 700; beforeImg.height = 933;
+    beforeImg.decoding = 'async';
+    beforeImg.loading = eager ? 'eager' : 'lazy';
+    beforeWrap.appendChild(beforeImg);
+
+    var tagBefore = document.createElement('span');
+    tagBefore.className = 'ba-tag ba-tag-before';
+    tagBefore.textContent = 'BEFORE';
+    var tagAfter = document.createElement('span');
+    tagAfter.className = 'ba-tag ba-tag-after';
+    tagAfter.textContent = 'AFTER';
+
+    var handle = document.createElement('div');
+    handle.className = 'ba-handle';
+    var grip = document.createElement('div');
+    grip.className = 'ba-handle-grip';
+    grip.setAttribute('role', 'slider');
+    grip.setAttribute('tabindex', '0');
+    grip.setAttribute('aria-label', 'Comparison position, pair ' + (i + 1));
+    grip.setAttribute('aria-valuemin', '0');
+    grip.setAttribute('aria-valuemax', '100');
+    grip.setAttribute('aria-valuenow', '50');
+    grip.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M8 8l-4 4 4 4M16 8l4 4-4 4"/></svg>';
+    handle.appendChild(grip);
+
+    frame.appendChild(afterImg);
+    frame.appendChild(beforeWrap);
+    frame.appendChild(tagBefore);
+    frame.appendChild(tagAfter);
+    frame.appendChild(handle);
+    item.appendChild(frame);
+
+    function setPos(pct){
+      pct = Math.max(2, Math.min(98, pct));
+      frame.style.setProperty('--pos', pct + '%');
+      grip.setAttribute('aria-valuenow', Math.round(pct));
+    }
+    function posFromEvent(clientX){
+      var rect = frame.getBoundingClientRect();
+      return ((clientX - rect.left) / rect.width) * 100;
+    }
+
+    var dragging = false;
+    frame.addEventListener('pointerdown', function(e){
+      dragging = true;
+      frame.setPointerCapture(e.pointerId);
+      setPos(posFromEvent(e.clientX));
+      stopAutoplay();
+    });
+    frame.addEventListener('pointermove', function(e){
+      if (!dragging) return;
+      setPos(posFromEvent(e.clientX));
+    });
+    function stopDrag(){
+      dragging = false;
+      startAutoplay();
+    }
+    frame.addEventListener('pointerup', stopDrag);
+    frame.addEventListener('pointercancel', stopDrag);
+
+    grip.addEventListener('keydown', function(e){
+      var current = parseFloat(frame.style.getPropertyValue('--pos')) || 50;
+      if (e.key === 'ArrowLeft'){ setPos(current - 4); e.preventDefault(); }
+      if (e.key === 'ArrowRight'){ setPos(current + 4); e.preventDefault(); }
+    });
+
+    return item;
+  }
+
+  pairs.forEach(function(pair, i){
+    track.appendChild(makeItem(pair, i));
+  });
+
+  var items = track.querySelectorAll('.ba-item');
+
+  function getItemsPerView(){
+    var w = window.innerWidth;
+    if (w <= 640) return 1;
+    if (w <= 1100) return 2;
+    return 3;
+  }
+
+  function layout(){
+    itemsPerView = getItemsPerView();
+    var viewportWidth = viewport.clientWidth;
+    var itemWidth = (viewportWidth - GAP * (itemsPerView - 1)) / itemsPerView;
+    items.forEach(function(item){ item.style.width = itemWidth + 'px'; });
+    step = itemWidth + GAP;
+    maxIndex = Math.max(0, pairs.length - itemsPerView);
+    if (index > maxIndex) index = maxIndex;
+    updateTransform(false);
+    updateCounter();
+  }
+
+  function updateTransform(animate){
+    if (animate === false){
+      track.style.transition = 'none';
+      track.style.transform = 'translateX(' + (-index * step) + 'px)';
+      track.offsetHeight;
+      track.style.transition = '';
+    } else {
+      track.style.transform = 'translateX(' + (-index * step) + 'px)';
+    }
+  }
+
+  function updateCounter(){
+    var rangeEnd = Math.min(index + itemsPerView, pairs.length);
+    counter.textContent = itemsPerView <= 1
+      ? (index + 1) + ' / ' + pairs.length
+      : (index + 1) + '–' + rangeEnd + ' / ' + pairs.length;
+  }
+
+  function goNext(){
+    index = (index >= maxIndex) ? 0 : index + 1;
+    updateTransform(true);
+    updateCounter();
+  }
+  function goPrev(){
+    index = (index <= 0) ? maxIndex : index - 1;
+    updateTransform(true);
+    updateCounter();
+  }
+
+  function startAutoplay(){
+    if (reduceMotion) return;
+    stopAutoplay();
+    autoplayId = setInterval(goNext, 4500);
+  }
+  function stopAutoplay(){
+    if (autoplayId){ clearInterval(autoplayId); autoplayId = null; }
+  }
+
+  prevBtn.addEventListener('click', function(){ goPrev(); startAutoplay(); });
+  nextBtn.addEventListener('click', function(){ goNext(); startAutoplay(); });
+  viewport.addEventListener('mouseenter', stopAutoplay);
+  viewport.addEventListener('mouseleave', startAutoplay);
+
+  window.addEventListener('resize', layout);
+
+  layout();
+  startAutoplay();
+})();
+</script>
+
+<script>
+window.EZCLEAN_REVIEWS = [
+  {
+    name: "Sophia M.",
+    initial: "S",
+    text: "I hired EzClean while staying at my vacation home in La Jolla, San Diego, and I couldn't be happier with the experience. Every surface was spotless and the attention to detail was impressive. The cleaners arrived right on time and were incredibly friendly and professional throughout. I would highly recommend EZClean to anyone looking for reliable, top-quality cleaning services in the San Diego area."
+  },
+  {
+    name: "Anelise D.",
+    initial: "A",
+    text: "We recently moved to the area and needed a deep cleaning at our new place. Easy to schedule and they showed up promptly. Rebecca was very professional and listened to all my requests and left the place nice and clean! Highly recommend them!"
+  },
+  {
+    name: "Charles H.",
+    initial: "C",
+    text: "We are delighted with the care, service, clear communication, and special little extras with the team! Highly recommend! Our cottage always looks and smells freshly clean. Linens and towels are freshly washed and folded."
+  },
+  {
+    name: "Abe C.",
+    initial: "A",
+    text: "Used them several times and always professional, flexible and does a great job. Even flexible with next day cleanings when I forget to schedule early in the week!"
+  },
+  {
+    name: "Ana C.",
+    initial: "A",
+    text: "Amazing service and super helpful!! Super recommend!"
+  },
+  {
+    name: "Marcelo R.",
+    initial: "M",
+    text: "I would like to express my gratitude and complete satisfaction with EZClean's services. The team performed an impeccable cleaning, attending to every detail with great professionalism, care, and efficiency. Special mention goes to Ms. Sarah, who provided excellent service from the very first contact. I would certainly recommend EZClean to anyone looking for top-quality service."
+  },
+  {
+    name: "Lu M.",
+    initial: "L",
+    text: "An outstanding experience from beginning to end. The team was professional, punctual, and paid exceptional attention to every detail. Everything was impeccably clean, and the level of care truly exceeded my expectations. I highly recommend their services and will certainly be using them again."
+  }
+];
+
+(function(){
+  var reviews = window.EZCLEAN_REVIEWS || [];
+  if (!reviews.length) return;
+
+  var carouselRoot = document.getElementById('reviewsCarousel');
+  var viewport = document.getElementById('reviewsViewport');
+  var track = document.getElementById('reviewsTrack');
+  var dotsWrap = document.getElementById('reviewsDots');
+  var prevBtn = document.getElementById('reviewsPrev');
+  var nextBtn = document.getElementById('reviewsNext');
+
+  var googleIcon = '<svg viewBox="0 0 48 48" aria-hidden="true"><path fill="#4285F4" d="M45.1 24.5c0-1.6-.1-3.2-.4-4.7H24v9h11.8c-.5 2.8-2.1 5.1-4.4 6.7v5.6h7.1c4.2-3.9 6.6-9.6 6.6-16.6z"/><path fill="#34A853" d="M24 46c5.9 0 10.9-2 14.5-5.3l-7.1-5.6c-2 1.3-4.5 2.1-7.4 2.1-5.7 0-10.5-3.8-12.2-9h-7.3v5.8C7.9 40.9 15.3 46 24 46z"/><path fill="#FBBC05" d="M11.8 28.2c-.4-1.3-.7-2.7-.7-4.2s.3-2.9.7-4.2v-5.8H4.5A22 22 0 0 0 2 24c0 3.6.9 6.9 2.5 9.9l7.3-5.7z"/><path fill="#EA4335" d="M24 10.8c3.2 0 6.1 1.1 8.4 3.3l6.3-6.3C34.9 4.2 29.9 2 24 2 15.3 2 7.9 7.1 4.5 14.2l7.3 5.8c1.7-5.2 6.5-9.2 12.2-9.2z"/></svg>';
+
+  function makeCard(review){
+    var item = document.createElement('div');
+    item.className = 'review-item';
+
+    var card = document.createElement('div');
+    card.className = 'review-card';
+
+    var stars = document.createElement('div');
+    stars.className = 'review-stars';
+    stars.setAttribute('aria-label', '5 out of 5 stars');
+    stars.textContent = '★★★★★';
+
+    var text = document.createElement('p');
+    text.className = 'review-text';
+    text.textContent = '“' + review.text + '”';
+
+    var footer = document.createElement('div');
+    footer.className = 'review-footer';
+
+    var avatar = document.createElement('span');
+    avatar.className = 'review-avatar';
+    avatar.textContent = review.initial;
+
+    var meta = document.createElement('div');
+    meta.className = 'review-meta';
+
+    var name = document.createElement('div');
+    name.className = 'review-name';
+    name.textContent = review.name;
+
+    var source = document.createElement('div');
+    source.className = 'review-source';
+    source.innerHTML = googleIcon + '<span>Google Review</span>';
+
+    meta.appendChild(name);
+    meta.appendChild(source);
+    footer.appendChild(avatar);
+    footer.appendChild(meta);
+
+    card.appendChild(stars);
+    card.appendChild(text);
+    card.appendChild(footer);
+    item.appendChild(card);
+    return item;
+  }
+
+  var slidesData = [reviews[reviews.length - 1]].concat(reviews, [reviews[0]]);
+  slidesData.forEach(function(r){ track.appendChild(makeCard(r)); });
+
+  var items = track.querySelectorAll('.review-item');
+  var realCount = reviews.length;
+  var index = 1;
+  var itemWidth = 0;
+  var step = 0;
+  var centerOffset = 0;
+  var autoplayId = null;
+  var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  reviews.forEach(function(_, i){
+    var dot = document.createElement('button');
+    dot.type = 'button';
+    dot.className = 'reviews-dot';
+    dot.setAttribute('aria-label', 'Go to review ' + (i + 1));
+    dot.addEventListener('click', function(){
+      goTo(i + 1);
+      restartAutoplay();
+    });
+    dotsWrap.appendChild(dot);
+  });
+  var dots = dotsWrap.querySelectorAll('.reviews-dot');
+
+  function getRatio(){
+    var w = window.innerWidth;
+    if (w <= 640) return 1;
+    if (w <= 1100) return 0.78;
+    return 0.6;
+  }
+
+  function layout(){
+    var vw = viewport.clientWidth;
+    var ratio = getRatio();
+    itemWidth = vw * ratio;
+    items.forEach(function(item){ item.style.width = itemWidth + 'px'; });
+    step = itemWidth;
+    centerOffset = (vw - itemWidth) / 2;
+    updateTransform(false);
+    updateActiveStates();
+  }
+
+  function updateTransform(animate){
+    if (animate === false){
+      track.style.transition = 'none';
+      track.style.transform = 'translateX(' + (centerOffset - index * step) + 'px)';
+      track.offsetHeight;
+      track.style.transition = '';
+    } else {
+      track.style.transform = 'translateX(' + (centerOffset - index * step) + 'px)';
+    }
+  }
+
+  function realIndex(){
+    return ((index - 1) % realCount + realCount) % realCount;
+  }
+
+  function updateActiveStates(){
+    items.forEach(function(item, i){ item.classList.toggle('is-active', i === index); });
+    var current = realIndex();
+    dots.forEach(function(dot, i){ dot.classList.toggle('is-active', i === current); });
+  }
+
+  function goNext(){
+    index++;
+    updateTransform(true);
+    updateActiveStates();
+  }
+  function goPrev(){
+    index--;
+    updateTransform(true);
+    updateActiveStates();
+  }
+  function goTo(targetIndex){
+    index = targetIndex;
+    updateTransform(true);
+    updateActiveStates();
+  }
+
+  track.addEventListener('transitionend', function(){
+    if (index === items.length - 1){
+      index = 1;
+      updateTransform(false);
+      updateActiveStates();
+    } else if (index === 0){
+      index = items.length - 2;
+      updateTransform(false);
+      updateActiveStates();
+    }
+  });
+
+  function startAutoplay(){
+    if (reduceMotion) return;
+    stopAutoplay();
+    autoplayId = setInterval(goNext, 6000);
+  }
+  function stopAutoplay(){
+    if (autoplayId){ clearInterval(autoplayId); autoplayId = null; }
+  }
+  function restartAutoplay(){ stopAutoplay(); startAutoplay(); }
+
+  prevBtn.addEventListener('click', function(){ goPrev(); restartAutoplay(); });
+  nextBtn.addEventListener('click', function(){ goNext(); restartAutoplay(); });
+
+  carouselRoot.addEventListener('mouseenter', stopAutoplay);
+  carouselRoot.addEventListener('mouseleave', startAutoplay);
+  carouselRoot.addEventListener('focusin', stopAutoplay);
+  carouselRoot.addEventListener('focusout', startAutoplay);
+
+  carouselRoot.addEventListener('keydown', function(e){
+    if (e.key === 'ArrowLeft'){ goPrev(); restartAutoplay(); e.preventDefault(); }
+    if (e.key === 'ArrowRight'){ goNext(); restartAutoplay(); e.preventDefault(); }
+  });
+
+  var dragging = false;
+  var dragStartX = 0;
+  var dragDeltaX = 0;
+
+  viewport.addEventListener('pointerdown', function(e){
+    dragging = true;
+    dragStartX = e.clientX;
+    dragDeltaX = 0;
+    track.style.transition = 'none';
+    stopAutoplay();
+    viewport.setPointerCapture(e.pointerId);
+  });
+  viewport.addEventListener('pointermove', function(e){
+    if (!dragging) return;
+    dragDeltaX = e.clientX - dragStartX;
+    track.style.transform = 'translateX(' + (centerOffset - index * step + dragDeltaX) + 'px)';
+  });
+  function endDrag(){
+    if (!dragging) return;
+    dragging = false;
+    track.style.transition = '';
+    var threshold = itemWidth * 0.18;
+    if (dragDeltaX > threshold){ goPrev(); }
+    else if (dragDeltaX < -threshold){ goNext(); }
+    else { updateTransform(true); }
+    startAutoplay();
+  }
+  viewport.addEventListener('pointerup', endDrag);
+  viewport.addEventListener('pointercancel', endDrag);
+
+  window.addEventListener('resize', layout);
+
+  layout();
+  startAutoplay();
+})();
+</script>
+
+<script>
+(function(){
+  var items = Array.prototype.slice.call(document.querySelectorAll('#faqGrid [data-faq]'));
+  var openOrder = [];
+  var MAX_OPEN = 2;
+
+  items.forEach(function(item){
+    var btn = item.querySelector('.faq-question');
+    btn.addEventListener('click', function(){
+      var isOpen = item.classList.contains('is-open');
+      if (isOpen){
+        closeItem(item);
+        return;
+      }
+      openItem(item);
+      if (openOrder.length > MAX_OPEN){
+        var oldest = openOrder.shift();
+        if (oldest !== item) closeItem(oldest);
+      }
+    });
+  });
+
+  function openItem(item){
+    item.classList.add('is-open');
+    item.querySelector('.faq-question').setAttribute('aria-expanded', 'true');
+    openOrder.push(item);
+  }
+  function closeItem(item){
+    item.classList.remove('is-open');
+    item.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+    var i = openOrder.indexOf(item);
+    if (i !== -1) openOrder.splice(i, 1);
+  }
+})();
+</script>
+
+<script>
+(function(){
+  var toggle = document.getElementById('navToggle');
+  var nav = document.getElementById('siteNav');
+  if (!toggle || !nav) return;
+
+  toggle.addEventListener('click', function(){
+    var isOpen = nav.classList.toggle('is-open');
+    toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  });
+
+  nav.querySelectorAll('a').forEach(function(link){
+    link.addEventListener('click', function(){
+      nav.classList.remove('is-open');
+      toggle.setAttribute('aria-expanded', 'false');
+    });
+  });
+})();
+</script>
+
+</body>
+</html>
